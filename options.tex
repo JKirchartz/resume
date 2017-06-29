@@ -1,0 +1,24 @@
+% vim:ft=tex:
+%
+
+\setmainfont[
+        Path = fonts/,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+        Extension = .otf
+]{Montserrat}
+
+\usepackage{fontawesome}
+
+\newfontfamily{\FA}[
+        Path = fonts/,
+        Extension = .otf
+]{FontAwesome}
+
+\def\envelope{{\FA \faEnvelope}}
+\def\linkedin{{\FA \faLinkedin}}
+\def\github{{\FA \faGithub}}
+\def\phone{{\FA \faPhone}}
+\def\globe{{\FA \faGlobe}}
