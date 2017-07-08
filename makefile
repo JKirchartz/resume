@@ -4,8 +4,7 @@
 #
 
 all:
-				pandoc -fmarkdown-implicit_figures --latex-engine=xelatex -V geometry:margin=1.8cm --include-in-header=./options.tex -o JKirchartz-Resume.pdf JKirchartz-Resume.md
-
+				pandoc -fmarkdown-implicit_figures --latex-engine=xelatex -V geometry:margin=1.8cm --include-in-header=./in/options.tex -o ./out/JKirchartz-Resume.pdf ./in/JKirchartz-Resume.md
 
 # vim:ft=make
 #

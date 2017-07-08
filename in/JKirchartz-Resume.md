@@ -1,6 +1,6 @@
 \pagenumbering{gobble}
 
-![headshot](images/headshot.jpg)
+![headshot](./in/images/headshot.jpg)
 
 ## \color{blue} Joel **Kirchartz**
 
@@ -18,8 +18,6 @@
                              *at Fireman Creative*
 
                              \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
-
-                             --------------------------------------------------------------------------------------------------------
 
                              Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
 
