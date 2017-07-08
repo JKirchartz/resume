@@ -1,0 +1,16 @@
+/*
+ * style.css
+ * Copyright (C) 2017 jkirchartz
+ *
+ * Distributed under terms of the NPL (Necessary Public License) license.
+ */
+
+body {
+	background: white;
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+        color: blue;
+}
+
