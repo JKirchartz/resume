@@ -3,11 +3,12 @@
 
 \setmainfont[
         Path = fonts/,
-        UprightFont = *-Regular,
+        UprightFont = *-Light,
         BoldFont = *-Bold,
         Extension = .otf
 ]{Montserrat}
 
+\usepackage[usenames,dvipsnames,svgnames,x11names]{xcolor}
 \usepackage{fontawesome}
 
 \newfontfamily{\FA}[
@@ -20,3 +21,16 @@
 \def\github{{\FA \faGithub}}
 \def\phone{{\FA \faPhone}}
 \def\globe{{\FA \faGlobe}}
+\def\star{{\FA \faStar}}
+\def\mapmarker{{\FA \faMapMarker}}
+\def\graduationcap{{\FA \faGraduationCap}}
+\def\briefcase{{\FA \faBriefcase}}
+
+
+% \usepackage{multicol}
+% \newcommand{\hideFromPandoc}[1]{#1}
+% \hideFromPandoc{
+%         \let\Begin\begin
+%         \let\Newcolumn\newcolumn
+%         \let\End\end
+% }
