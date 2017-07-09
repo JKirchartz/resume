@@ -1,6 +1,6 @@
 \pagenumbering{gobble}
 
-![headshot](./in/images/headshot-round-100.png)
+![headshot](./in/images/headshot-round-100.jpg)
 
 \color{blue} *Joel* Kirchartz
 =============================
@@ -12,16 +12,16 @@
 ----------------------------------- --------------------------------------------------------------
 \
 
-\color{grey} *2016 and Ongoing*           **Senior Developer**
+\color{grey} *2016 and Ongoing*         **Senior Developer**
 
-\color{black}                                          *at Fireman Creative*
+\color{black}                           *at Fireman Creative*
 
 
-                                                       \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
+                                        \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
 
-\color{grey}                                          Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
+                                        Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
 
-                                                       Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out & Equal, Honey Farms Construction LLC
+                                        Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out & Equal, Honey Farms Construction LLC
 
 
 \
