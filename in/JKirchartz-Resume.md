@@ -9,18 +9,19 @@
 -----------------------------
 
 
----------------------- --------------------------------------------------------------
+----------------------------------- --------------------------------------------------------------
 \
 
-*2016 and Ongoing*           **Senior Developer**
+\color{grey} *2016 and Ongoing*           **Senior Developer**
 
-                             *at Fireman Creative*
+\color{black}                                          *at Fireman Creative*
 
-                             \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
 
-                             Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
+                                                       \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
 
-                             Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out & Equal, Honey Farms Construction LLC
+\color{grey}                                          Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
+
+                                                       Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out & Equal, Honey Farms Construction LLC
 
 
 \
@@ -30,14 +31,15 @@
 \color{blue} \star &nbsp;&nbsp; Awards
 -----------------------------
 
----------------------- --------------------------------------------------------------
+----------------------------------- --------------------------------------------------------------
 \
 
-*2016*                       **Steel City Codefest**
+\color{grey} *2016*                       **Steel City Codefest**
 
-                             *Winner: Design Category*
 
-                             Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
+\color{black}                             *Winner: Design Category*
+
+                                          Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
 
 \
 -------------------------------------------------------------------------------------
@@ -45,22 +47,23 @@
 \color{blue} \graduationcap &nbsp;&nbsp; Education
 -----------------------------
 
----------------------- --------------------------------------------------------------
+-------------------------------- --------------------------------------------------------------
 \
 
-*2011 and Ongoing*           **Continuing Education**
+\color{grey} *2011 and Ongoing*           **Continuing Education**
 
-                             *CodeSchool, Codecademy, FreeCodeCamp*
+\color{black}                             *CodeSchool, Codecademy, FreeCodeCamp*
 
-                             Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more.
+                                          Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more.
 
 \
 
-*2006*                       **B.S. Interactive Multimedia Design**
+\color{grey} *2006*                       **B.S. Interactive Multimedia Design**
 
-                             *Art Institute of Pittsburgh*
+\color{black}                             *Art Institute of Pittsburgh*
 
-                             Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers.
+
+                                          Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers.
 
 \
 -------------------------------------------------------------------------------------
@@ -82,14 +85,14 @@
 \color{blue} ABOUT
 -----------------------------
 
-\color{black} Polyglot programmer and advocate of free, libre, and open-source technologies
+\color{grey} Polyglot programmer and advocate of free, libre, and open-source technologies
 with over 15 years of planning, creating, maintaining, and optimizing online
 experiences
 
 \color{blue} TECHNOLOGIES
 -----------------------------
 
-\color{black} Javascript, NodeJS, Python, PHP, Bash, HTML5, CSS3, Bootstrap, LESS, SASS, SVG,
+\color{grey} Javascript, NodeJS, Python, PHP, Bash, HTML5, CSS3, Bootstrap, LESS, SASS, SVG,
 SQL, MongoDB, Vagrant, JQuery, Roots.io (Trellis, Sage, Bedrock), Ansible, GIT,
 SVN
 
