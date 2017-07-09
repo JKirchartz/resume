@@ -1,6 +1,6 @@
 \pagenumbering{gobble}
 
-![headshot](./in/images/headshot-round-100.jpg)
+![headshot](./in/images/headshot-450.jpg)
 
 \color{blue} *Joel* Kirchartz
 =============================
@@ -14,7 +14,7 @@
 
 \color{grey} *2016 and Ongoing*         **Senior Developer**
 
-\color{black}                           *at Fireman Creative*
+                                        *at Fireman Creative*
 
 
                                         \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
@@ -37,7 +37,7 @@
 \color{grey} *2016*                       **Steel City Codefest**
 
 
-\color{black}                             *Winner: Design Category*
+                                          *Winner: Design Category*
 
                                           Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
 
@@ -52,7 +52,7 @@
 
 \color{grey} *2011 and Ongoing*           **Continuing Education**
 
-\color{black}                             *CodeSchool, Codecademy, FreeCodeCamp*
+                                          *CodeSchool, Codecademy, FreeCodeCamp*
 
                                           Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more.
 
@@ -60,7 +60,7 @@
 
 \color{grey} *2006*                       **B.S. Interactive Multimedia Design**
 
-\color{black}                             *Art Institute of Pittsburgh*
+                                          *Art Institute of Pittsburgh*
 
 
                                           Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers.
