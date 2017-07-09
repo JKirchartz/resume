@@ -1,9 +1,15 @@
 \pagenumbering{gobble}
 
-![headshot](./in/images/headshot-450.jpg)
+----------------------------------------- --------------------------------------
+![headshot](./in/images/headshot-450.jpg) \Huge \color{blue} *Joel* Kirchartz
 
-\color{blue} *Joel* Kirchartz
-=============================
+
+                                              \large SENIOR FULL-STACK DEVELOPER
+
+\
+-------------------------------------------------------------------------------
+
+\normalsize
 
 \color{blue} \briefcase &nbsp;&nbsp; Professional Experience
 -----------------------------
@@ -19,7 +25,7 @@
 
                                         \mapmarker &nbsp;&nbsp; Point Breeze, Pittsburgh
 
-                                        Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
+                                        \color{grey} Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
 
                                         Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out & Equal, Honey Farms Construction LLC
 
@@ -39,22 +45,21 @@
 
                                           *Winner: Design Category*
 
-                                          Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
+                                          \color{grey} Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
 
-\
--------------------------------------------------------------------------------------
+\ -------------------------------------------------------------------------------------
 
 \color{blue} \graduationcap &nbsp;&nbsp; Education
 -----------------------------
 
--------------------------------- --------------------------------------------------------------
+------------------------------------ --------------------------------------------------------------
 \
 
 \color{grey} *2011 and Ongoing*           **Continuing Education**
 
                                           *CodeSchool, Codecademy, FreeCodeCamp*
 
-                                          Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more.
+                                          \color{grey} Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more.
 
 \
 
@@ -63,7 +68,7 @@
                                           *Art Institute of Pittsburgh*
 
 
-                                          Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers.
+                                          \color{grey} Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers.
 
 \
 -------------------------------------------------------------------------------------
