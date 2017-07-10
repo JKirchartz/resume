@@ -7,12 +7,13 @@ To build the resume run `make` and a new PDF will be generated in the current fo
 
 ## Colophon
 
-[Montserrat][5]
-[Font Awesome][6]
+* [Montserrat][5]
+* [Font Awesome][6]
+
 
 ## Special Thanks
 
-[Ixxie][2] for the [inspiration][1], [Sway][3] for the [Latex/FontAwesome code][4]
+[Ixxie][2] for the [inspiration][1], [Sway][3] for the original [Latex/FontAwesome code][4]
 
 
 

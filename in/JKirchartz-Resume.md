@@ -1,9 +1,7 @@
 \pagenumbering{gobble}
 
------------------------------------------ --------------------------------------
-![headshot](./in/images/headshot-450.jpg) \Huge \color{blue} *Joel* Kirchartz
-
-
+-------------------------------------------- --------------------------------------
+![headshot](./in/images/headshot-450.jpg)     \Huge \color{blue} *Joel* Kirchartz
                                               \large SENIOR FULL-STACK DEVELOPER
 
 \
@@ -47,7 +45,8 @@
 
                                           \color{grey} Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean.
 
-\ -------------------------------------------------------------------------------------
+\
+-------------------------------------------------------------------------------------
 
 \color{blue} \graduationcap &nbsp;&nbsp; Education
 -----------------------------
