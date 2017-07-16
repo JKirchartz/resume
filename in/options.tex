@@ -1,25 +1,20 @@
 % vim:ft=tex:
 %
-\title{
-  Joel Kirchartz Resume
-}
-\author{
-  Joel C. Kirchartz
-}
-
+\usemodule[simplefonts][size=12pt]
 \setmainfont[
         Path = ./in/fonts/,
-        UprightFont = *-Regular,
-        ItalicFont = *-Light,
-        BoldFont = *-Bold,
+        UprightFont = Montserrat-Regular,
+        ItalicFont = Montserrat-Light,
+        BoldFont = Montserrat-Bold,
         Extension = .otf
-]{Montserrat}
+]
 
-\usepackage{./in/fontawesome}
-\newfontfamily{\FA}[
+\usemodule[./in/fontawesome]
+\definefont[FA][
         Path = ./in/fonts/,
+        UprightFont = FontAwesome
         Extension = .otf
-]{FontAwesome}
+]
 \def\envelope{{\FA \faEnvelope}}
 \def\linkedin{{\FA \faLinkedin}}
 \def\github{{\FA \faGithub}}
@@ -30,12 +25,13 @@
 \def\graduationcap{{\FA \faGraduationCap}}
 \def\briefcase{{\FA \faBriefcase}}
 
-\usepackage[rgb,dvipsnames]{xcolor}
-\definecolor{blue}{RGB}{49,130,189}
-\definecolor{grey}{RGB}{102,102,102}
-\definecolor{black}{RGB}{0,0,0}
+\definecolor[blue][r=49,g=130,b=189]
+\definecolor[grey][r=102,g=102,b=102]
+\definecolor[black][r=0,g=0,b=0]
 
+\usemodule{wrapfig}
 
+\setupexternalfigures[directory={images}]
 
 % \usepackage{multicol}
 % \newcommand{\hideFromPandoc}[1]{#1}
@@ -44,3 +40,4 @@
 %         \let\Newcolumn\newcolumn
 %         \let\End\end
 % }
+
