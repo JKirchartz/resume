@@ -1,10 +1,23 @@
 % vim:ft=tex:
 %
 \usemodule[simplefonts][size=12pt]
-\setmainfont[Montserrat-Light]
 
+\startenvironment montserrat
+		\starttypescript[montserrat]
+				\definefontsynonym [Sans] [file:Montserrat-Light]
+				\definefontsynonym [SansBold] [file:Montserrat-Bold]
+		\stoptypescript
+\stopenvironment
+
+\setmainfont[Sans]
+
+\startenvironment fontawesome
+		\starttypescript[fontawesome]
+				\definefontsynonym [FA] [file:FontAwesome]
+		\stoptypescript
+\stopenvironment
 \usemodule[./in/fontawesome]
-\definefont[FA][FontAwesome]
+
 \def\envelope{{\FA \faEnvelope}}
 \def\linkedin{{\FA \faLinkedin}}
 \def\github{{\FA \faGithub}}
@@ -26,8 +39,8 @@
 % \usepackage{multicol}
 % \newcommand{\hideFromPandoc}[1]{#1}
 % \hideFromPandoc{
-%         \let\Begin\begin
-%         \let\Newcolumn\newcolumn
-%         \let\End\end
+%		 \let\Begin\begin
+%		 \let\Newcolumn\newcolumn
+%		 \let\End\end
 % }
 
