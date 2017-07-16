@@ -1,23 +1,23 @@
 ﻿
-![](in/images/headshot-450.jpg)
+\placefigure[left]{}{\externalfigure[headshot-450.jpg][]}
 
 \color[blue] *Joel* Kirchartz
 
 SENIOR FULL-STACK DEVELOPER
 
 
-\color[blue] \briefcase &nbsp;&nbsp; Professional Experience
+\color[blue]{\briefcase &nbsp;&nbsp; Professional Experience}
 -----------------------------
 
 
 ---------------- --------------------------------------------------------------
 \
 
-\color[grey]
-*2016*            **Senior Developer**
+\color[grey]{
+*2016*}           **Senior Developer**
 
-\color[grey]      *at Fireman Creative*
-*and Ongoing*
+\color[grey]{      *at Fireman Creative*
+*and Ongoing*}
 
                   \color[grey] Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.
 
@@ -25,8 +25,8 @@ SENIOR FULL-STACK DEVELOPER
 
 \
 
-\color[grey]
-*2014-2015*      **Technical Specialist III**
+\color[grey]{
+*2014-2015*}     **Technical Specialist III**
 
                  *at Google*
 
@@ -36,8 +36,8 @@ SENIOR FULL-STACK DEVELOPER
 
 \
 
-\color[grey]
-*2013-2014*      **Brander, Team COBRA**
+\color[grey]{
+*2013-2014*}     **Brander, Team COBRA**
 
                  *at Branding Brand*
 
