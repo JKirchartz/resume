@@ -4,16 +4,16 @@
 
 \startenvironment montserrat
 		\starttypescript[montserrat]
-				\definefontsynonym [Sans] [file:Montserrat-Light]
-				\definefontsynonym [SansBold] [file:Montserrat-Bold]
+        \definefontsynonym [Sans] [file:Montserrat-Light.otf] [features=default]
+        \definefontsynonym [SansBold] [file:Montserrat-Bold.otf] [features=default]
 		\stoptypescript
 \stopenvironment
 
-\setmainfont[Sans]
+\setmainfont[montserrat]
 
 \startenvironment fontawesome
 		\starttypescript[fontawesome]
-				\definefontsynonym [FA] [file:FontAwesome]
+        \definefontsynonym [FA] [file:FontAwesome.otf] [features=default]
 		\stoptypescript
 \stopenvironment
 \usemodule[./in/fontawesome]
@@ -35,12 +35,4 @@
 \usemodule{wrapfig}
 
 \setupexternalfigures[directory={images}]
-
-% \usepackage{multicol}
-% \newcommand{\hideFromPandoc}[1]{#1}
-% \hideFromPandoc{
-%		 \let\Begin\begin
-%		 \let\Newcolumn\newcolumn
-%		 \let\End\end
-% }
 
