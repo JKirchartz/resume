@@ -1,38 +1,48 @@
 % vim:ft=tex:
 %
-\usemodule[simplefonts][size=12pt]
+\starttypescript [sans] [montserrat]
+  \definefontsynonym [Sans]            [file:Montserrat-Light.otf]       [features=default]
+  \definefontsynonym [SansItalic]      [file:Montserrat-LightItalic.otf] [features=default]
+  \definefontsynonym [SansSlanted]     [file:Montserrat-LightItalic.otf] [features=default]
+  \definefontsynonym [SansBold]        [file:Montserrat-Bold.otf]        [features=default]
+  \definefontsynonym [SansBoldItalic]  [file:Montserrat-BoldItalic.otf]  [features=default]
+  \definefontsynonym [SansBoldSlanted] [file:Montserrat-BoldItalic.otf]  [features=default]
+  \definefontsynonym [SansCaps]        [file:Montserrat-Light.otf]       [features=smallcaps]
+  \definefontsynonym [SansBoldCaps]    [file:Montserrat-Bold.otf]        [features=smallcaps]
+\stoptypescript
 
-\startenvironment montserrat
-		\starttypescript[montserrat]
-        \definefontsynonym [Sans] [file:Montserrat-Light.otf] [features=default]
-        \definefontsynonym [SansBold] [file:Montserrat-Bold.otf] [features=default]
-		\stoptypescript
-\stopenvironment
+\starttypescript [montserrat]
+  \definetypeface [montserrat] [rm] [serif] [modern]     [default]
+  \definetypeface [montserrat] [ss] [sans]  [montserrat] [default]
+  \definetypeface [montserrat] [tt] [mono]  [modern]     [default]
+  \definetypeface [montserrat] [mm] [math]  [modern]     [default]
+  \quittypescriptscanning
+\stoptypescript
 
-\setmainfont[montserrat]
+\setupbodyfont[montserrat,sans]
 
-\startenvironment fontawesome
-		\starttypescript[fontawesome]
-        \definefontsynonym [FA] [file:FontAwesome.otf] [features=default]
-		\stoptypescript
-\stopenvironment
-\usemodule[./in/fontawesome]
+\usesymbols[fontawesome]
+\setupsymbolset[fontawesome]
 
-\def\envelope{{\FA \faEnvelope}}
-\def\linkedin{{\FA \faLinkedin}}
-\def\github{{\FA \faGithub}}
-\def\phone{{\FA \faPhone}}
-\def\globe{{\FA \faGlobe}}
-\def\star{{\FA \faStar}}
-\def\mapmarker{{\FA \faMapMarker}}
-\def\graduationcap{{\FA \faGraduationCap}}
-\def\briefcase{{\FA \faBriefcase}}
+\define\envelope     {\symbol[envelope]}
+\define\linkedin     {\symbol[linkedin]}
+\define\github       {\symbol[github]}
+\define\phone        {\symbol[phone]}
+\define\globe        {\symbol[globe]}
+\define\star         {\symbol[star]}
+\define\mapmarker    {\symbol[mapmarker]}
+\define\graduationcap{\symbol[graduationcap]}
+\define\briefcase    {\symbol[briefcase]}
 
 \definecolor[blue][r=.19,g=.5,b=.74]
 \definecolor[grey][r=.4,g=.4,b=.4]
 \definecolor[black][r=0,g=0,b=0]
 
-\usemodule{wrapfig}
-
 \setupexternalfigures[directory={images}]
 
+% color takes an argument
+%    \color[NAME]{CONTENT}
+%
+% To switch the color globally, use \directcolor, but then pandoc will
+% mangle your input, so make \color behave like \directcolor.
+\let\color\directcolor
