@@ -1,0 +1,454 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% vim:ft=tex:
+%
+\title{
+  Joel Kirchartz Resume
+}
+\author{
+  Joel C. Kirchartz
+}
+
+\setmainfont[
+        Path = ./in/fonts/,
+        UprightFont = *-Regular,
+        ItalicFont = *-Light,
+        BoldFont = *-Bold,
+        Extension = .otf
+]{Montserrat}
+
+\usepackage{./in/fontawesome}
+\newfontfamily{\FA}[
+        Path = ./in/fonts/,
+        Extension = .otf
+]{FontAwesome}
+\def\envelope{{\FA \faEnvelope}}
+\def\linkedin{{\FA \faLinkedin}}
+\def\github{{\FA \faGithub}}
+\def\phone{{\FA \faPhone}}
+\def\globe{{\FA \faGlobe}}
+\def\star{{\FA \faStar}}
+\def\mapmarker{{\FA \faMapMarker}}
+\def\graduationcap{{\FA \faGraduationCap}}
+\def\briefcase{{\FA \faBriefcase}}
+
+\usepackage[rgb,dvipsnames]{xcolor}
+\definecolor{blue}{RGB}{49,130,189}
+\definecolor{grey}{RGB}{102,102,102}
+\definecolor{black}{RGB}{0,0,0}
+
+
+
+ \usepackage{multicol}
+
+
+\date{}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\includegraphics{./in/images/headshot-450.jpg} \Huge \color{blue}
+\emph{Joel} Kirchartz \large SENIOR FULL-STACK DEVELOPER
+
+\normalsize
+
+\begin{multicols}{2}
+
+\subsection{\texorpdfstring{\color{blue} \briefcase ~~ Professional
+Experience}{ ~~ Professional Experience}}\label{professional-experience}
+
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2016}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Senior Developer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{and Ongoing}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at Fireman Creative}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Creates custom WordPress sites mostly in the medical,
+non-profit, and real estate sectors. Implementing systems, organizing
+projects, and working closely with clients to fulfill their vision.
+Documents processes and produce tutorials for Clients. Mentors Junior
+Designers and creative team on development processes.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+Clients: UPMC (Curavi), JCC Pittsburgh, ISAC Pittsburgh, Out \& Equal,
+Honey Farms Construction LLC
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2014-2015}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Technical Specialist III}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at Google}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Develop and maintain customizable functions to validate,
+clean, and optimize product data feeds across various shopping engines
+for a variety of clients and migrate VBScript to JavaScript.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+Clients: Jet.com, Vistaprint, Amazon, Tesco, Neiman Marcus, Walmart,
+Cabela's, and more
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2013-2014}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Brander, Team COBRA}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at Branding Brand}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Work with critical, major, and minor issues and updates on
+existing user-friendly cross platform mobile websites and apps for major
+retailers across the globe.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+Clients: American Eagle, Hot Topic, Speedo, Timberland, Tumi Japan, and
+more
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2013-2013}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Web Developer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at Skyword}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Maintain and implement new features and upgrades in
+existing custom content publication system, promote and improve best
+practices.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2011}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Full Stack Web Developer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at Songwhale}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Implement cross-platform mobile websites and multimedia,
+redesign and modify multiple WordPress sites, templates, and plugins,
+and modify existing projects. Update and optimize a python game and make
+it cross-platform compatible. Setup and administer virtual hosting for
+projects.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+Clients: BAMP, UPMC, DOTS, CalU, Clique Vodka, Dibella's Old Fashioned
+Submarines, Pittsburgh Penguins, Pittsburgh Pirates, and more
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2008-2010}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Web Developer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at WorldDealer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Maintain and develop eCommerce websites for over 200
+automotive dealerships nationwide, including marketing and mobile sites,
+custom CMS modules, SEO Optimization, and 3rd party technologies.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+Clients: Day Automotive, Baierl Automotive, Findlay Auto Group, Kelly
+Auto Group, and more
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2006-2007}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Multimedia Designer}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{at MedRespond}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Film, edit, compose, render, optimize, and transcribe
+thousands of videos for use in an online patient education system.
+Design and Animate Marketing materials for print and web. Develop
+best-practices for compression, storage and playback of all digital
+media.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{\texorpdfstring{\color{blue} \star ~~
+Awards}{ ~~ Awards}}\label{awards}
+
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2016}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Steel City Codefest}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{Winner: Design Category}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Team Hyperham worked with The Pittsburgh Downtown
+Partnership (PDP) \& City of Pittsburgh Department of Public Works (DPW)
+to create the SmarTrash website and 2 apps to assist in communications
+between the PDP \& DPW to help keep Pittsburgh's streets clean.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{\texorpdfstring{\color{blue} \graduationcap ~~
+Education}{ ~~ Education}}\label{education}
+
+\begin{longtable}[c]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2011} \emph{and Ongoing}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{Continuing Education}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{CodeSchool, Codecademy, FreeCodeCamp}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Studied AngularJS, Ember, JavaScript, Ruby/Rails, Python,
+GIT, Mongo DB, Bootstrap, and more.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\color{grey} \emph{2006}
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\textbf{B.S. Interactive Multimedia Design}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\emph{Art Institute of Pittsburgh}
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\color{grey} Studied Design, Videography, Photography, Philosophy,
+Psychology, and more. Tutored peers.
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\strut\end{minipage} &
+\begin{minipage}[t]{0.74\columnwidth}\raggedright\strut
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\columnbreak
+
+\subsection{\texorpdfstring{\color{blue}
+CONTACT}{ CONTACT}}\label{contact}
+
+\color{blue} \globe ~~ \href{http://jkirchartz.com}{jkirchartz.com}
+
+\color{blue} \envelope ~~
+\href{mailto:me@jkirchartz.com}{\nolinkurl{me@jkirchartz.com}}
+
+\color{blue} \linkedin ~~
+\href{http://linkedin.com/jkirchartz}{linkedin.com/jkirchartz}
+
+\color{blue} \github ~~
+\href{http://github.com/jkirchartz}{github.com/jkirchartz}
+
+\color{blue} \phone ~~ \href{tel:412-259-3675}{412.259.DORK}
+
+\subsection{\texorpdfstring{\color{blue} ABOUT}{ ABOUT}}\label{about}
+
+\color{grey} Polyglot programmer and advocate of free, libre, and
+open-source technologies with over 15 years of planning, creating,
+maintaining, and optimizing online experiences
+
+\subsection{\texorpdfstring{\color{blue}
+TECHNOLOGIES}{ TECHNOLOGIES}}\label{technologies}
+
+\color{grey} Javascript, NodeJS, Python, PHP, Bash, HTML5, CSS3,
+Bootstrap, LESS, SASS, SVG, SQL, MongoDB, Vagrant, JQuery, Roots.io
+(Trellis, Sage, Bedrock), Ansible, GIT, SVN
+
+\subsection{\texorpdfstring{\color{blue} SIDE
+PROJECTS}{ SIDE PROJECTS}}\label{side-projects}
+
+\subsubsection{THE REVENGERISTS}\label{the-revengerists}
+
+Podcast, Wiki, Web-based game, and more featuring characters from The
+Revengerist's Omniverse
+
+\href{http://revengerists.com}{revengerists.com}
+
+\subsubsection{GLITCHY 3BIT DITHER}\label{glitchy-3bit-dither}
+
+\href{http://jkirchartz.com/Glitchy3bitdither}{jkirchartz.com/Glitchy3bitdither}
+
+Client-side javascript to create glitch- aesthetic images.
+
+\end{multicols}
+\end{document}

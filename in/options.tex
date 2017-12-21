@@ -1,5 +1,11 @@
 % vim:ft=tex:
 %
+\usepackage{./in/fontawesome}
+\usepackage[rgb,dvipsnames]{xcolor}
+\usepackage{memoir}
+
+\documentclass[]{memoir}
+
 \title{
   Joel Kirchartz Resume
 }
@@ -15,7 +21,6 @@
         Extension = .otf
 ]{Montserrat}
 
-\usepackage{./in/fontawesome}
 \newfontfamily{\FA}[
         Path = ./in/fonts/,
         Extension = .otf
@@ -30,17 +35,10 @@
 \def\graduationcap{{\FA \faGraduationCap}}
 \def\briefcase{{\FA \faBriefcase}}
 
-\usepackage[rgb,dvipsnames]{xcolor}
 \definecolor{blue}{RGB}{49,130,189}
 \definecolor{grey}{RGB}{102,102,102}
 \definecolor{black}{RGB}{0,0,0}
 
 
+\def\nbsp{{\kern 1em}}
 
-% \usepackage{multicol}
-% \newcommand{\hideFromPandoc}[1]{#1}
-% \hideFromPandoc{
-%         \let\Begin\begin
-%         \let\Newcolumn\newcolumn
-%         \let\End\end
-% }
