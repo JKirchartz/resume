@@ -1,0 +1,11 @@
+{
+  "name": "resume",
+  "main": [
+    "."
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "components-font-awesome": "^4.7.0"
+  },
+  "version": "0.1.0"
+}

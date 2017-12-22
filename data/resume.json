@@ -36,7 +36,6 @@
 						"and more"
 					]
 				},
-
 				{
 					"time": "2013-2014",
 					"heading": "Brander, Team COBRA",
@@ -51,15 +50,12 @@
 						"and more"
 					]
 				},
-
 				{
 					"time": "2013-2013",
 					"heading": "Web Developer",
 					"subheading": "Skyword",
 					"description": "Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices."
 				},
-
-
 				{
 					"time": "2011",
 					"heading": "Full Stack Web Developer",
@@ -77,8 +73,6 @@
 						"and more"
 					]
 				},
-
-
 				{
 					"time": "2008-2010",
 					"heading": "Web Developer",
@@ -92,9 +86,6 @@
 						"and more"
 					]
 				},
-
-
-
 				{
 					"time": "2006-2007",
 					"heading": "Multimedia Designer",
@@ -105,6 +96,7 @@
 						"and more"
 					]
 				}
+			]
 		},
 		{
 			"header": {
@@ -120,7 +112,6 @@
 				}
 			]
 		},
-
 		{
 			"header": {
 				"icon": "graduationcap",
@@ -133,11 +124,12 @@
 					"description": "Studied AngularJS, Ember, C#, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more."
 				},
 				{
-					"time": "2006"
-					"heading": "B.S. Interactive Multimedia Design"
-					"subheading": "Art Institute of Pittsburgh"
+					"time": "2006",
+					"heading": "B.S. Interactive Multimedia Design",
+					"subheading": "Art Institute of Pittsburgh",
 					"description": "Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers."
 				}
 			]
 		}
+	]
 }
