@@ -19,7 +19,7 @@ header h1 {
 }
 
 .offset {
-  margin-left: 12.93333%;
+  margin-left: 13%;
 }
 
 time {
@@ -27,23 +27,27 @@ time {
 }
 time::before {
   position: absolute;
-  top: -.25rem;
+  top: -1.5rem;
   bottom: -.25rem;
   right: 0;
   content: '';
-  border-right: 1px solid #000000;
+  border-right: 1px solid gray;
 }
 time::after {
   position: absolute;
   border: 2px solid #FFFFFF;
-  top: .25rem;
-  right: calc(-.25rem + 1px);
+  top: .15rem;
+  right: -.33rem;
   content: '';
   display: block;
-  height: .5rem;
-  width: .5rem;
+  height: .75rem;
+  width: .75rem;
   border-radius: 50%;
   background: #000000;
+}
+
+article:last-of-type time::before {
+  height: 2rem;
 }
 
 h1,
@@ -76,6 +80,10 @@ ul.list-item:not(:last-of-type)::after,
 li.list-item:not(:last-of-type)::after {
   content: ', ';
   display: inline;
+}
+
+a {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
