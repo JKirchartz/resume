@@ -10,17 +10,17 @@ module.exports = function(grunt) {
 			main: {
 				files: [{
 					src: "src/headshot.jpg",
-					dest: "dist/headshot.jpg"
+					dest: "docs/headshot.jpg"
 				}]
 			}
 		},
 		"sass": {
-			dist : {
+			docs : {
 				options : {
 					style: "expanded"
 				},
 				files: {
-					"dist/style.css": "src/style.scss"
+					"docs/style.css": "src/style.scss"
 				}
 			}
 		},
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: "src",
 					src: "index.hbs",
-					dest: "dist",
+					dest: "docs",
 					ext: ".html",
 				}],
 				globals: ["src/resume.json"]
