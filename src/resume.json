@@ -1,0 +1,138 @@
+﻿{
+	"sections": [
+		{
+			"header": {
+				"icon": "briefcase",
+				"text": "Experience"
+			},
+			"items": [
+				{
+					"time": "2017",
+					"heading": "Front-End Developer",
+					"subheading": "Barkley REI",
+					"description": "Create static frontend, and a complete WordPress site, for 2 different clients"
+				},
+				{
+					"time": "2016-2017",
+					"heading": "Senior Developer",
+					"subheading": "Fireman Creative",
+					"description": "Creates custom WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.",
+					"clients": [
+						"UPMC (Curavi)",
+						"JCC Pittsburgh",
+						"ISAC Pittsburgh",
+						"Out & Equal",
+						"Honey Farms Construction LLC",
+						"and more"
+					]
+				},
+				{
+					"time": "2014-2015",
+					"heading": "Technical Specialist III",
+					"subheading": "Google",
+					"description": "Develop and maintain customizable functions to validate, clean, and optimize product data feeds across various shopping engines for a variety of clients and migrate VBScript to JavaScript.",
+					"clients": [
+						"Jet.com",
+						"Vistaprint",
+						"Amazon",
+						"Tesco",
+						"Neiman Marcus",
+						"Walmart",
+						"Cabela's",
+						"and more"
+					]
+				},
+				{
+					"time": "2013-2014",
+					"heading": "Brander, Team COBRA",
+					"subheading": "Branding Brand",
+					"description": "Work with critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.",
+					"clients": [
+						"American Eagle",
+						"Hot Topic",
+						"Speedo",
+						"Timberland",
+						"Tumi Japan",
+						"and more"
+					]
+				},
+				{
+					"time": "2012-2013",
+					"heading": "Web Developer",
+					"subheading": "Skyword",
+					"description": "Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices."
+				},
+				{
+					"time": "2011",
+					"heading": "Full Stack Web Developer",
+					"subheading": "Songwhale",
+					"description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects.",
+					"clients": [
+						"BAMP",
+						"UPMC",
+						"DOTS",
+						"CalU",
+						"Clique Vodka",
+						"Dibella's Old Fashioned Submarines",
+						"Pittsburgh Penguins",
+						"Pittsburgh Pirates",
+						"and more"
+					]
+				},
+				{
+					"time": "2008-2010",
+					"heading": "Web Developer",
+					"subheading": "WorldDealer",
+					"description": "Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies.",
+					"clients": [
+						"Day Automotive",
+						"Baierl Automotive",
+						"Findlay Auto Group",
+						"Kelly Auto Group",
+						"and more"
+					]
+				},
+				{
+					"time": "2006-2007",
+					"heading": "Multimedia Designer",
+					"subheading": "MedRespond",
+					"description": "Film, edit, compose, render, optimize, and transcribe thousands of videos for use in an online patient education system. Design and Animate Marketing materials for print and web. Develop best-practices for compression, storage and playback of all digital media."
+				}
+			]
+		},
+		{
+			"header": {
+				"icon": "star",
+				"text": "Awards"
+			},
+			"items" : [
+				{
+					"time": "2016",
+					"heading": "Steel City Codefest",
+					"subheading": "Winner: Design Category",
+					"description": "Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean."
+				}
+			]
+		},
+
+		{
+			"header": {
+				"icon": "graduation-cap",
+				"text": "Education"
+			},
+			"items" : [
+				{
+					"time": "2011 and Ongoing",
+					"heading": "CodeSchool, Codecademy, FreeCodeCamp, SoloLearn",
+					"description": "Studied AngularJS, Ember, C#, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more."
+				},
+				{
+					"time": "2006",
+					"heading": "B.S. Interactive Multimedia Design",
+					"subheading": "Art Institute of Pittsburgh",
+					"description": "Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers."
+				}
+			]
+		}
+	]
+}
