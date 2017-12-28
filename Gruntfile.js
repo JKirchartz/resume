@@ -6,14 +6,6 @@ module.exports = function(grunt) {
 		// Metadata.
 		"pkg": grunt.file.readJSON("package.json"),
 		// Task configuration.
-		"copy" : {
-			main: {
-				files: [{
-					src: "src/headshot.jpg",
-					dest: "docs/headshot.jpg"
-				}]
-			}
-		},
 		"sass": {
 			docs : {
 				options : {
@@ -40,10 +32,9 @@ module.exports = function(grunt) {
 
 	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks("grunt-contrib-sass");
-	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadNpmTasks("grunt-compile-handlebars");
 
 	// Default task.
-	grunt.registerTask("default", ["copy", "compile-handlebars", "sass"]);
+	grunt.registerTask("default", ["compile-handlebars", "sass"]);
 
 };

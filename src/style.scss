@@ -2,10 +2,6 @@ $blue: #309090;
 $white: #FFFFFF;
 $black: #000000;
 
-body {
-	-webkit-print-color-adjust: exact;
-}
-
 html, body {
 	font-family: Montserrat, sans-serif;
 }
@@ -96,33 +92,67 @@ a {
 }
 
 
-@media (screen and min-width: 576px) {
+@media screen and (min-width: 576px) {
 	.container-fluid {
 		max-width: 540px;
 	}
 }
 
-@media (screen and min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.container-fluid {
 		max-width: 720px;
 	}
 }
 
-@media (screen and min-width: 992px) {
+@media screen and (min-width: 992px) {
 	.container-fluid {
 		max-width: 960px;
 	}
 }
 
 
-@media (screen and min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.container-fluid {
 		max-width: 1140px;
 	}
 }
 
-@media (print) {
+@media print {
+	body {
+		-webkit-print-color-adjust: exact;
+	}
+
 	.container-fluid {
 		max-width: 100%;
+	}
+
+	header {
+		margin-top: 0;
+
+		h1 {
+			margin-top: 1rem;
+		}
+
+		.col-2 {
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+
+		.col-4 {
+			display: none;
+		}
+	}
+
+	main.col-8,
+	aside.col-4 {
+		padding-left: 0;
+	}
+
+	.fa {
+		margin-right: .25rem;
+	}
+
+	.offset {
+		margin-left: 11%;
 	}
 }
