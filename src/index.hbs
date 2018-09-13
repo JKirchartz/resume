@@ -1,120 +1,130 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>JKirchartz Resume</title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body class="container-fluid">
-		<header class="row">
-			<div class="col-2">
-				<img src="https://i.imgur.com/NRbMgti.jpg" class="img-fluid rounded-circle" alt="JKirchartz Headshot">
-			</div>
-			<div class="col text-right">
-				<h1 class="display-4">Joel <strong>Kirchartz</strong></h1>
-				<p class="lead">Senior Full&ndash;Stack Developer</p>
-			</div>
-			<div class="col-4"></div>
-		</header>
-		<div class="row">
-			<main class="col-8">
-			{{#each sections}}
-				<section>
-					{{#with header}}
-						<header class="row">
-							<h2 class="h4 offset-2 col"><i class="fa fa-{{ icon }}"></i> <strong>{{ text }}</strong></h2>
-						</header>
-					{{/with}}
-					{{#each items}}
-						<article class="row">
-							<time class="h6 col-2">
-								{{ time }}
-							</time>
-							<div class="col-10">
-								<h3 class="h6"><strong>{{ heading }}</strong></h3>
-								<p class="lead">{{ subheading }}</p>
-								<p>{{ description }}</p>
-								{{#if clients}}
-									<p>
-										<ul>
-											<li><strong>Clients:</strong></li>
-											{{#each clients}}
-												<li class="list-item">{{this}}</li>
-											{{/each}}
-										</ul>
-									</p>
-								{{/if}}
-							</div>
-						</article>
-					{{/each}}
-				</section>
-			{{/each}}
-			</main>
-			<aside class="col-4">
-				<h4>Contact</h4>
-				<p>
-					<a href="mailto:me@jkirchartz.com"><i class="fa fa-envelope-o"></i> me@jkirchartz.com</a><br>
-					<a href="tel:4122593675"><i class="fa fa-phone"></i> 412.259.DORK</a><br>
-					<a href="http://jkirchartz.com"><i class="fa fa-globe"></i> jkirchartz.com</a><br>
-					<a href="https://github.com/jkirchartz"><i class="fa fa-github"></i> github.com/jkirchartz</a><br>
-					<a href="https://linkedin.com/in/jkirchartz"><i class="fa fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
-				</p>
-				<h4>About</h4>
-				<p>
-					Polyglot programmer and advocate of free, libre, and open-source technologies with over 15 years of planning, creating, maintaining, and optimizing online experiences
-				</p>
-				<h4>Technologies</h4>
-				<p>
-					<ul>
-						<li class="list-item">Javascript</li>
-						<li class="list-item">NodeJS</li>
-						<li class="list-item">Python</li>
-						<li class="list-item">PHP</li>
-						<li class="list-item">Bash</li>
-						<li class="list-item">HTML5</li>
-						<li class="list-item">CSS3</li>
-						<li class="list-item">Bootstrap</li>
-						<li class="list-item">LESS</li>
-						<li class="list-item">SASS</li>
-						<li class="list-item">SVG</li>
-						<li class="list-item">SQL</li>
-						<li class="list-item">MongoDB</li>
-						<li class="list-item">Vagrant</li>
-						<li class="list-item">JQuery</li>
-						<li class="list-item">Roots.io (Trellis, Sage, Bedrock)</li>
-						<li class="list-item">Ansible</li>
-						<li class="list-item">GIT</li>
-						<li class="list-item">SVN</li>
-					</ul>
-				</p>
-				<h4>Applications</h4>
-				<p>
-					<ul>
-						<li class="list-item">Adobe Creative Suite</li>
-						<li class="list-item">Microsoft Office Suite</li>
-						<li class="list-item">G Suite by Google</li>
-					</ul>
-				</p>
-				<h4>Operating Systems</h4>
-				<p>
-					<ul>
-						<li class="list-item">Windows 7/8/10</li>
-						<li class="list-item">Mac OSX</li>
-						<li class="list-item">Linux (Fedora, CentOS, Debian. Ubuntu, Arch, CrunchBang/BunsenLabs)</li>
-					</ul>
-				</p>
-				<h4>Side Projects</h4>
-				<h5 class="h6">Glitchy 3bit Dither</h5>
-				<p>Client-side javascript to create glitch-aesthetic images.<br><a href="http://jkirchartz.com/Glitchy3bitdither">jkirchartz.com/Glitchy3bitdither</a></p>
-				<h5 class="h6">NaNoGenMo</h5>
-				<p>National Novel Generation Month, writing code to write a novel as opposed to writing a novel yourself.<br><a href="http://jkirchartz.com/NaNoGenMo">jkirchartz.com/NaNoGenMo</a></p>
-				<h5 class="h6">Twitter Bots</h5>
-				<p>Various Twitter bots.<br><a href="http://twitter.com/jkirchartz/lists/my-bots">twitter.com/jkirchartz/lists/my-bots</a></p>
-			</aside>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JKirchartz Resume</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      window.addEventListener('load', function(){
+        var items = document.querySelectorAll('.Experience article.row');
+        var showItems = parseInt((window.location.hash).slice(1), 10);
+        for (var i = 0; i < items.length; i++) {
+          if ((i + 1) > showItems) {
+            items[i].style.display = "none";
+          }
+        }
+      });
+    </script>
+  </head>
+  <body class="container-fluid">
+    <header class="row">
+      <div class="col-12 col-sm-2 offset-sm-1">
+        <img src="https://i.imgur.com/NRbMgti.jpg" class="img-fluid rounded-circle" alt="JKirchartz Headshot">
+      </div>
+      <div class="col-12 col-sm-6 offset-sm-2 text-right">
+        <h1 class="display-4">Joel <strong>Kirchartz</strong></h1>
+        <p class="lead">Senior Full&ndash;Stack Developer</p>
+      </div>
+    </header>
+    <div class="row">
+      <main class="col-8">
+      {{#each sections}}
+        <section class="{{header.text}}">
+          {{#with header}}
+            <header class="row">
+              <h2 class="h4 offset-2 col"><i class="fa fa-{{ icon }}"></i> <strong>{{ text }}</strong></h2>
+            </header>
+          {{/with}}
+          {{#each items}}
+            <article class="row">
+              <time class="h6 col-2">
+                {{ time }}
+              </time>
+              <div class="col-10">
+                <h3 class="h6"><strong>{{ heading }}</strong></h3>
+                <p class="lead">{{ subheading }}</p>
+                <p>{{ description }}</p>
+                {{#if clients}}
+                  <p>
+                    <ul>
+                      <li><strong>Clients:</strong></li>
+                      {{#each clients}}
+                        <li class="list-item">{{this}}</li>
+                      {{/each}}
+                    </ul>
+                  </p>
+                {{/if}}
+              </div>
+            </article>
+          {{/each}}
+        </section>
+      {{/each}}
+      </main>
+      <aside class="col-4">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:me@jkirchartz.com"><i class="fa fa-envelope-o"></i> me@jkirchartz.com</a><br>
+          <a href="tel:4122593675"><i class="fa fa-phone"></i> 412.259.DORK</a><br>
+          <a href="http://jkirchartz.com"><i class="fa fa-globe"></i> jkirchartz.com</a><br>
+          <a href="https://github.com/jkirchartz"><i class="fa fa-github"></i> github.com/jkirchartz</a><br>
+          <a href="https://linkedin.com/in/jkirchartz"><i class="fa fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
+        </p>
+        <h4>About</h4>
+        <p>
+          Polyglot programmer and advocate of free, libre, and open-source technologies with over 15 years of planning, creating, maintaining, and optimizing online experiences
+        </p>
+        <h4>Technologies</h4>
+        <p>
+          <ul>
+            <li class="list-item">Javascript</li>
+            <li class="list-item">NodeJS</li>
+            <li class="list-item">Python</li>
+            <li class="list-item">PHP</li>
+            <li class="list-item">Bash</li>
+            <li class="list-item">HTML5</li>
+            <li class="list-item">CSS3</li>
+            <li class="list-item">Bootstrap</li>
+            <li class="list-item">LESS</li>
+            <li class="list-item">SASS</li>
+            <li class="list-item">SVG</li>
+            <li class="list-item">SQL</li>
+            <li class="list-item">MongoDB</li>
+            <li class="list-item">Vagrant</li>
+            <li class="list-item">JQuery</li>
+            <li class="list-item">Roots.io (Trellis, Sage, Bedrock)</li>
+            <li class="list-item">Ansible</li>
+            <li class="list-item">GIT</li>
+            <li class="list-item">SVN</li>
+          </ul>
+        </p>
+        <h4>Applications</h4>
+        <p>
+          <ul>
+            <li class="list-item">Adobe Creative Suite</li>
+            <li class="list-item">Microsoft Office Suite</li>
+            <li class="list-item">G Suite by Google</li>
+          </ul>
+        </p>
+        <h4>Operating Systems</h4>
+        <p>
+          <ul>
+            <li class="list-item">Windows 7/8/10</li>
+            <li class="list-item">Mac OSX</li>
+            <li class="list-item">Linux (Fedora, CentOS, Debian. Ubuntu, Arch, CrunchBang/BunsenLabs)</li>
+          </ul>
+        </p>
+        <h4>Side Projects</h4>
+        <h5 class="h6">Glitchy 3bit Dither</h5>
+        <p>Client-side javascript to create glitch-aesthetic images.<br><a href="http://jkirchartz.com/Glitchy3bitdither">jkirchartz.com/Glitchy3bitdither</a></p>
+        <h5 class="h6">NaNoGenMo</h5>
+        <p>National Novel Generation Month, writing code to write a novel as opposed to writing a novel yourself.<br><a href="http://jkirchartz.com/NaNoGenMo">jkirchartz.com/NaNoGenMo</a></p>
+        <h5 class="h6">Twitter Bots</h5>
+        <p>Various Twitter bots.<br><a href="http://twitter.com/jkirchartz/lists/my-bots">twitter.com/jkirchartz/lists/my-bots</a></p>
+      </aside>
+    </div>
+  </body>
 </html>

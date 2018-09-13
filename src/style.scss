@@ -3,52 +3,52 @@ $white: #FFFFFF;
 $black: #000000;
 
 html, body {
-	font-family: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 strong {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 ul {
-	list-style: none;
-	-webkit-padding-start: 0;
+  list-style: none;
+  -webkit-padding-start: 0;
 }
 
 header {
-	margin: 1rem 0;
+  margin: 1rem 0;
 
-	h1 {
-		margin-top: 2rem;
-	}
+  h1 {
+    margin-top: 2rem;
+  }
 }
 
 time {
-	position: relative;
-	text-align: right;
+  position: relative;
+  text-align: right;
 
-	&::before {
-		position: absolute;
-		top: -1.5rem;
-		bottom: -.25rem;
-		right: 0;
-		content: '';
-		border-right: 1px solid lighten($black, 50%);
-	}
+  &::before {
+    position: absolute;
+    top: -1.5rem;
+    bottom: -.25rem;
+    right: 0;
+    content: '';
+    border-right: 1px solid lighten($black, 50%);
+  }
 
-	&::after {
-		position: absolute;
-		text-shadow: 0 3px 0 $white, 0 -3px $white;
-		top: 2%;
-		right: -.33em;
-		font: normal normal normal .5rem/1 FontAwesome;
-		content: '\f111';
-		display: block;
-	}
+  &::after {
+    position: absolute;
+    text-shadow: 0 3px 0 $white, 0 -3px $white;
+    top: 2%;
+    right: -.33em;
+    font: normal normal normal .5rem/1 FontAwesome;
+    content: '\f111';
+    display: block;
+  }
 }
 
 article:last-of-type time::before {
-	height: 2rem;
+  height: 2rem;
 }
 
 h1,
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .fa,
@@ -66,99 +66,96 @@ h3,
 h4,
 h5,
 h6 {
-	color: $blue;
+  color: $blue;
 }
 
 main .fa {
-	margin-right: 1em;
-	margin-left: -1.1em;
+  margin-right: 1em;
+  margin-left: -1.1em;
 
-	&-graduation-cap {
-		margin-left: -1.25em;
-	}
+  &-graduation-cap {
+    margin-left: -1.25em;
+  }
 }
 
 ul,
 li {
-	display: inline;
+  display: inline;
 
-	&.list-item:not(:last-of-type)::after {
-		content: ', ';
-		display: inline;
-	}
+  &.list-item:not(:last-of-type)::after {
+    content: ', ';
+    display: inline;
+  }
 }
 
 a {
-	color: $black;
+  color: $black;
 }
 
 
 @media screen and (min-width: 576px) {
-	.container-fluid {
-		max-width: 540px;
-	}
+  .container-fluid {
+    max-width: 540px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-	.container-fluid {
-		max-width: 720px;
-	}
+  .container-fluid {
+    max-width: 720px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-	.container-fluid {
-		max-width: 960px;
-	}
+  .container-fluid {
+    max-width: 960px;
+  }
 }
 
 
 @media screen and (min-width: 1200px) {
-	.container-fluid {
-		max-width: 1140px;
-	}
+  .container-fluid {
+    max-width: 1140px;
+  }
 }
 
 @media print {
-	body {
-		-webkit-print-color-adjust: exact;
-	}
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 
-	.container-fluid {
-		max-width: 100%;
-	}
+  .container-fluid {
+    max-width: 100%;
+  }
 
-	header {
-		margin-top: 0;
+  header {
+    margin-top: 0;
 
-		h1 {
-			margin-top: 1rem;
-		}
+    h1 {
+      margin-top: 1em!important;
+    }
 
-		.col-2 {
-			flex: 0 0 20%;
-			max-width: 20%;
-		}
+    .col-2 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
 
-		.col-4 {
-			display: none;
-		}
-	}
+  }
 
-	main.col-8,
-	aside.col-4 {
-		padding-left: 0;
-	}
+  main.col-8,
+  aside.col-4 {
+    padding-left: 0;
+  }
 
-	.fa {
-		margin-right: .25rem;
-	}
+  .fa {
+    margin-right: .25rem;
+  }
 
-	.offset {
-		margin-left: 11%;
-	}
+  .offset {
+    margin-left: 11%;
+  }
 
-	time::after {
-		right: -.45em;
-	}
+  time::after {
+    right: -.45em;
+  }
 
 }
