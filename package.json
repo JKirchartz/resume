@@ -4,7 +4,7 @@
   "description": "JKirchartz Resume",
   "main": "Gruntfile.js",
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-compile-handlebars": "^2.0.2",
     "grunt-contrib-copy": "^1.0.0",
