@@ -8,6 +8,18 @@
       "items": [
         {
           "time": "2018",
+          "contract": true,
+          "heading": "UI Engineer - Analytics and Web Optimization",
+          "subheading": "American Eagle Outfitters",
+          "description": "Create temporary experiences and A/B tests through Adobe Target. Implement the Notify Me out-of-stock notification system, which generated over 1000 hits on its first day. Make other solutions permanent in the Ember portion of the UI.",
+          "technologies": [
+            "Adobe Target",
+            "Ember"
+          ]
+        },
+        {
+          "time": "2018-2019",
+          "contract": false,
           "heading": "Senior Interactive Developer",
           "subheading": "Garrison Hughes",
           "description": "Create animated CSS3/HTML5 ads, build and send email campaigns, manage digital videos, and maintain existing responsive WordPress sites.",
@@ -20,12 +32,14 @@
         },
         {
           "time": "2017",
+          "contract": true,
           "heading": "Front-End Developer",
           "subheading": "Contractor at Barkley REI",
           "description": "Create a responsive static frontend, and a complete responsive WordPress site, for 2 different clients in the education sector"
         },
         {
           "time": "2016-2017",
+          "contract": false,
           "heading": "Senior Developer",
           "subheading": "Fireman Creative",
           "description": "Creates custom responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.",
@@ -40,6 +54,7 @@
         },
         {
           "time": "2014-2015",
+          "contract": true,
           "heading": "Technical Specialist III",
           "subheading": "Contractor at Google",
           "description": "Develop and maintain customizable functions to validate, clean, and optimize product data feeds across various shopping engines for a variety of clients and migrate VBScript to JavaScript.",
@@ -56,6 +71,7 @@
         },
         {
           "time": "2013-2014",
+          "contract": false,
           "heading": "Brander, Team COBRA",
           "subheading": "Branding Brand",
           "description": "Work with critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.",
@@ -70,12 +86,14 @@
         },
         {
           "time": "2012-2013",
+          "contract": false,
           "heading": "Web Developer",
           "subheading": "Skyword",
           "description": "Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices."
         },
         {
           "time": "2011",
+          "contract": true,
           "heading": "Full Stack Web Developer",
           "subheading": "Contractor at Songwhale",
           "description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects.",
@@ -93,6 +111,7 @@
         },
         {
           "time": "2008-2010",
+          "contract": false,
           "heading": "Web Developer",
           "subheading": "WorldDealer",
           "description": "Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies.",
@@ -106,6 +125,7 @@
         },
         {
           "time": "2006-2007",
+          "contract": false,
           "heading": "Multimedia Designer",
           "subheading": "MedRespond",
           "description": "Film, edit, compose, render, optimize, and transcribe thousands of videos for use in an online patient education system. Design and Animate Marketing materials for print and web. Develop best-practices for compression, storage and playback of all digital media."
