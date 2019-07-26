@@ -15,7 +15,11 @@
           "technologies": [
             "Adobe Target",
             "Ember"
-          ]
+          ],
+          "dates" : {
+            "start": "10/2018",
+            "end": "7/2019"
+          }
         },
         {
           "time": "2018",
@@ -28,7 +32,11 @@
             "Pittsburgh Post-Gazette",
             "First National Bank",
             "and more"
-          ]
+          ],
+          "dates" : {
+            "start": "10/2018",
+            "end": "7/2019"
+          }
         },
         {
           "time": "2017",
