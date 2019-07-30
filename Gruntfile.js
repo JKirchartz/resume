@@ -24,6 +24,12 @@ module.exports = function(grunt) {
           src: "index.hbs",
           dest: "docs",
           ext: ".html",
+        },{
+          expand: true,
+          cwd: "src",
+          src: "plain.hbs",
+          dest: "docs",
+          ext: ".html",
         }],
         globals: ["src/resume.json"]
       }
