@@ -141,9 +141,19 @@ a {
 
   }
 
-  main.col-8,
-  aside.col-4 {
-    padding-left: 0;
+  main,
+  aside {
+    padding-left: 0 !important;
+  }
+
+  main.col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  aside.col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 
   .fa {
