@@ -1,0 +1,101 @@
+{
+  "skills": {
+    "Design": [
+      ["Typography", 7],
+      ["Illustration", 5],
+      ["Motion Graphics", 6],
+      ["Animation", 6],
+      "Adobe Creative Suite": {
+        ["Photoshop", 8],
+        ["Premier", 8],
+        ["After Effects", 7],
+        ["Flash", 7],
+        ["Illustrator",4]
+      ]
+    ],
+    "Technology": {
+      "DevOps": {
+        ["Ansible", 4],
+        ["Capistrano", 3],
+        ["TravisCI", 2],
+        ["Vagrant", 6],
+        ["Apache", 4],
+        ["Nginx", 6],
+        ["LetsEncrypt", 5]
+      ],
+      "Version Control": {
+        ["Git", 8],
+        ["SVN", 4],
+        ["Mercurial", 2]
+      ],
+      "Tools": {
+        ["Vim", 8],
+        ["Eclipse", 6],
+        ["Basecamp", 6],
+        ["Jira", 6],
+        ["Github", 7],
+        ["Commandline", 7],
+        ["Webpack", 3],
+        ["Gulp/Grunt", 6]
+      ],
+      "Databases": {
+        ["MongoDB", 7],
+        ["Postgres", 5],
+        ["MySQL/MariaDB", 6]
+      ],
+      "Techniques": {
+        ["Web Scraping", 10],
+        ["AJAX", 9],
+        ["Digital Ads", 6],
+        ["Email Marketing", 5]
+      ],
+      "Programming": [
+        ["Javascript/Node", 9],
+        ["PHP", 9],
+        ["Python", 8],
+        ["HTML5", 10],
+        ["CSS3", 8],
+        ["SVG", 7],
+        ["SASS / LESS / PostCSS", 8],
+        ["Java", 4],
+        ["Bash", 6],
+        ["Perl", 2]
+      ],
+      "Frameworks/Libraries": [
+        ["Wordpress", 7],
+        ["Bootstrap", 6],
+        ["Semantic UI", 5],
+        ["Roots.io (Trellis, Sage, Bedrock)", 7],
+        ["JQuery", 9],
+        ["EmberJS", 5],
+        ["ExpressJS", 7],
+        ["MeteorJS", 6],
+        ["Struts2", 3],
+        ["Django", 3]
+      ]
+    },
+    "Office": [
+      ["Microsoft Office", 8],
+      ["G Suite", 9 ]
+    ],
+    "Operating Systems": [
+      ["Linux (Fedora, CentOS, Debian)", 8],
+      ["OSX", 6],
+      ["Windows (7,8,10)", 5 ]
+    ],
+    "Other Skills": [
+      ["A/B Testing", 6],
+      ["Rapid Prototyping", 9],
+      ["Typing (70 WPM)", 8],
+      ["Active Listening", 6],
+      ["Public Speaking", 8],
+      ["Creativity", 9],
+      ["Problem Solving", 9],
+      ["Responsibility", 10],
+      ["Adaptability", 7],
+      ["Mentoring", 8],
+      ["Teamwork", 8],
+      ["Digital Communication", 9]
+    ]
+  }
+}

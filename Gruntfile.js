@@ -31,6 +31,7 @@ module.exports = function(grunt) {
           dest: "docs",
           ext: ".html",
         }],
+        helpers: ["src/helpers.js"],
         globals: ["src/resume.json"]
       }
     },

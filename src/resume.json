@@ -50,7 +50,7 @@
           "contract": false,
           "heading": "Senior Developer",
           "subheading": "Fireman Creative",
-          "description": "Creates custom responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentors Junior Designers and creative team on development processes.",
+          "description": "Creates custom responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implementing systems, organizing projects, and working closely with clients to fulfill their vision. Documents processes and produce tutorials for Clients. Mentor junior developers and design team on development processes.",
           "clients": [
             "UPMC (Curavi)",
             "JCC Pittsburgh",
@@ -104,7 +104,7 @@
           "contract": true,
           "heading": "Full Stack Web Developer",
           "subheading": "Contractor at Songwhale",
-          "description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects.",
+          "description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects. Mentor Junior Developers.",
           "clients": [
             "BAMP",
             "UPMC",
@@ -122,7 +122,7 @@
           "contract": false,
           "heading": "Web Developer",
           "subheading": "WorldDealer",
-          "description": "Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies.",
+          "description": "Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies. Develop an API to drill down into automotive inventory information.",
           "clients": [
             "Day Automotive",
             "Baierl Automotive",
@@ -150,7 +150,7 @@
           "time": "2016",
           "heading": "Steel City Codefest",
           "subheading": "Winner: Design Category",
-          "description": "Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help keep Pittsburgh’s streets clean."
+          "description": "Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help organize the effort to keep Pittsburgh’s streets clean."
         }
       ]
     },
