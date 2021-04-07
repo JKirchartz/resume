@@ -11,7 +11,7 @@
           "contract": false,
           "heading": "Software Engineer",
           "subheading": "Bentley Systems",
-          "description": "Iteratively build new functionality in a 3d Digital Twin web app, deploy sites to production, mentor Interns."
+          "description": "Iteratively build new functionality in a 3d Digital Twin web app, deploy sites to production, mentor Interns.",
           "technologies": [
               "react",
               "typescript",
