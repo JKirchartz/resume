@@ -7,6 +7,23 @@
       },
       "items": [
         {
+          "time":"2019-2021",
+          "contract": false,
+          "heading": "Software Engineer",
+          "subheading": "Bentley Systems",
+          "description": "Iteratively build new functionality in a 3d Digital Twin web app, deploy sites to production, mentor Interns."
+          "technologies": [
+              "react",
+              "typescript",
+              "learna",
+              "itwinjs"
+          ],
+          "dates": {
+             "start": "9/2019",
+             "end": "4/2021",
+          }
+        },
+        {
           "time": "2018-2019",
           "contract": true,
           "heading": "UI Engineer - Analytics and Web Optimization",
