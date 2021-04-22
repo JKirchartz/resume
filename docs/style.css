@@ -7,11 +7,13 @@ strong {
 }
 
 ul {
-  font-size: 0.9rem;
-  display: inline;
+  font-size: 0.85rem;
   list-style: none;
-  margin-bottom: 0.5em;
+  margin: 0.5em;
   -webkit-padding-start: 0;
+}
+ul:last-of-type {
+  margin-bottom: 1rem;
 }
 
 header {
