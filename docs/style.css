@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body {
   font-family: Montserrat, sans-serif;
 }
@@ -8,7 +7,10 @@ strong {
 }
 
 ul {
+  font-size: 0.9rem;
+  display: inline;
   list-style: none;
+  margin-bottom: 0.5em;
   -webkit-padding-start: 0;
 }
 
@@ -26,18 +28,18 @@ time {
 time::before {
   position: absolute;
   top: -1.5rem;
-  bottom: -0.25rem;
+  bottom: -.25rem;
   right: 0;
-  content: "";
+  content: '';
   border-right: 1px solid gray;
 }
 time::after {
   position: absolute;
   text-shadow: 0 3px 0 #FFFFFF, 0 -3px #FFFFFF;
   top: 2%;
-  right: -0.33em;
-  font: normal normal normal 0.5rem/1 FontAwesome;
-  content: "";
+  right: -.33em;
+  font: normal normal normal .5rem/1 FontAwesome;
+  content: '\f111';
   display: block;
 }
 
@@ -54,7 +56,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.fa,
+.fas,
 h2,
 h3,
 h4,
@@ -63,21 +65,22 @@ h6 {
   color: #309090;
 }
 
-main .fa {
+main .fas {
   margin-right: 1em;
   margin-left: -1.1em;
 }
-main .fa-graduation-cap {
+main .fas.fa-graduation-cap {
   margin-left: -1.25em;
 }
+main .fas.fa-keyboard, main .fas.fa-user-tie {
+  margin: 0.5em;
+}
 
-ul,
 li {
   display: inline;
 }
-ul.list-item:not(:last-of-type)::after,
 li.list-item:not(:last-of-type)::after {
-  content: ", ";
+  content: ', ';
   display: inline;
 }
 
@@ -126,7 +129,7 @@ a {
   }
 
   main,
-aside {
+  aside {
     padding-left: 0 !important;
   }
 
@@ -140,8 +143,8 @@ aside {
     max-width: 33.333333%;
   }
 
-  .fa {
-    margin-right: 0.25rem;
+  .fas {
+    margin-right: .25rem;
   }
 
   .offset {
@@ -149,7 +152,7 @@ aside {
   }
 
   time::after {
-    right: -0.45em;
+    right: -.45em;
   }
 
   a {

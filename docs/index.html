@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>JKirchartz Resume</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9b28502349.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
+      document.getElementsByTagName('title')[0].innerHTML += new Date().getFullYear();
       window.addEventListener('load', function(){
+        var vars = {
+            length: 100,
+            tech: true,
+            clients: true
+        };
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {vars[key] = value;});
+        console.log("url params:", parts, vars);
         var items = document.querySelectorAll('.Experience article.row');
-        var showItems = parseInt((window.location.hash).slice(1), 10);
+        var showItems = parseInt(vars["length"], 10);
         for (var i = 0; i < items.length; i++) {
+          if (!vars["tech"]) {
+             items[i].querySelector('.tech').style.display = "none";
+          }
+          if (!vars["clients"]) {
+             items[i].querySelector('.clients').style.display = "none";
+          }
           if ((i + 1) > showItems) {
             items[i].style.display = "none";
           }
@@ -36,7 +50,7 @@
       <main class="col-12 col-lg-8">
         <section class="Experience">
             <header class="row">
-              <h2 class="h4 offset-2 col"><i class="fa fa-briefcase"></i> <strong>Experience</strong></h2>
+              <h2 class="h4 offset-2 col"><i class="fas fa-briefcase"></i> <strong>Experience</strong></h2>
             </header>
             <article class="row">
               <time class="h6 col-2">
@@ -45,7 +59,22 @@
               <div class="col-10">
                 <h3 class="h6"><strong>Software Engineer</strong></h3>
                 <p class="lead">Bentley Systems</p>
-                <p>Iteratively build new functionality in a 3d Digital Twin web app, deploy sites to production, mentor Interns.</p>
+                <p>Iteratively build new functionality in a 3d Digital Twin SPA web-app, deploy sites to production, mentor Interns.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">React</li>
+                      <li class="list-item">Typescript</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">SASS</li>
+                      <li class="list-item">VS Code</li>
+                      <li class="list-item">Git</li>
+                      <li class="list-item">itwinjs</li>
+                      <li class="list-item">Learna</li>
+                      <li class="list-item">Bash</li>
+                      <li class="list-item">OSX</li>
+                      <li class="list-item">Windows</li>
+                      <li class="list-item">WSL</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -56,6 +85,16 @@
                 <h3 class="h6"><strong>UI Engineer - Analytics and Web Optimization</strong></h3>
                 <p class="lead">Contractor at American Eagle Outfitters</p>
                 <p>Create temporary experiences and A/B tests through Adobe Target. Implement the Notify Me out-of-stock notification system, which generated over 1000 hits on its first day. Make other solutions permanent in the Ember portion of the UI.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">Adobe Target</li>
+                      <li class="list-item">Javascript</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">CSS3</li>
+                      <li class="list-item">Ember</li>
+                      <li class="list-item">GIT</li>
+                      <li class="list-item">OSX</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -66,15 +105,24 @@
                 <h3 class="h6"><strong>Senior Interactive Developer</strong></h3>
                 <p class="lead">Garrison Hughes</p>
                 <p>Create animated CSS3/HTML5 ads, build and send email campaigns, manage digital videos, and maintain existing responsive WordPress sites.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">UPMC</li>
-                        <li class="list-item">Pittsburgh Post-Gazette</li>
-                        <li class="list-item">First National Bank</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">WordPress</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">CSS3</li>
+                      <li class="list-item">Animation</li>
+                      <li class="list-item">Grunt</li>
+                      <li class="list-item">Bash</li>
+                      <li class="list-item">Git</li>
+                      <li class="list-item">OSX</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">UPMC</li>
+                      <li class="list-item">Pittsburgh Post-Gazette</li>
+                      <li class="list-item">First National Bank</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -85,6 +133,18 @@
                 <h3 class="h6"><strong>Front-End Developer</strong></h3>
                 <p class="lead">Contractor at Barkley REI</p>
                 <p>Create a responsive static frontend, and a complete responsive WordPress site, for 2 different clients in the education sector</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">WordPress</li>
+                      <li class="list-item">Assemble.io</li>
+                      <li class="list-item">Handlebars</li>
+                      <li class="list-item">Grunt</li>
+                      <li class="list-item">Bower</li>
+                      <li class="list-item">yeoman</li>
+                      <li class="list-item">BASH</li>
+                      <li class="list-item">GIT</li>
+                      <li class="list-item">OSX</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -92,20 +152,37 @@
                 2016-2017
               </time>
               <div class="col-10">
-                <h3 class="h6"><strong>Senior Developer</strong></h3>
+                <h3 class="h6"><strong>Senior Full-Stack Developer</strong></h3>
                 <p class="lead">Fireman Creative</p>
-                <p>Create custom responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implement systems, organize projects, and work closely with clients to fulfill their vision. Document processes and produce tutorials for Clients. Mentor junior developers and design team on development processes.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">UPMC (Curavi)</li>
-                        <li class="list-item">JCC Pittsburgh</li>
-                        <li class="list-item">ISAC Pittsburgh</li>
-                        <li class="list-item">Out &amp; Equal</li>
-                        <li class="list-item">Honey Farms Construction LLC</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                <p>Work closely with designers and stakeholders to create fully customized responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implement systems, organize projects, and work closely with clients to fulfill their vision. Document processes and produce tutorials for Clients. Mentor junior developers and design team.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">WordPress</li>
+                      <li class="list-item">PHP</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">CSS3</li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">Bootstrap</li>
+                      <li class="list-item">Ansible</li>
+                      <li class="list-item">Roots.io</li>
+                      <li class="list-item">Laravel</li>
+                      <li class="list-item">Composer</li>
+                      <li class="list-item">Grunt</li>
+                      <li class="list-item">Bower</li>
+                      <li class="list-item">Vagrant</li>
+                      <li class="list-item">BASH</li>
+                      <li class="list-item">GIT</li>
+                      <li class="list-item">OSX</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">UPMC (Curavi)</li>
+                      <li class="list-item">JCC Pittsburgh</li>
+                      <li class="list-item">ISAC Pittsburgh</li>
+                      <li class="list-item">Out &amp; Equal</li>
+                      <li class="list-item">Honey Farms Construction LLC</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -116,19 +193,25 @@
                 <h3 class="h6"><strong>Technical Specialist III</strong></h3>
                 <p class="lead">Contractor at Google</p>
                 <p>Develop and maintain customizable functions to validate, clean, and optimize product data feeds across various shopping engines for a variety of clients and migrate VBScript to JavaScript.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">Jet.com</li>
-                        <li class="list-item">Vistaprint</li>
-                        <li class="list-item">Amazon</li>
-                        <li class="list-item">Tesco</li>
-                        <li class="list-item">Neiman Marcus</li>
-                        <li class="list-item">Walmart</li>
-                        <li class="list-item">Cabela&#x27;s</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">VBScript</li>
+                      <li class="list-item">BASH</li>
+                      <li class="list-item">Perforce</li>
+                      <li class="list-item">Goobuntu/Linux</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">Jet.com</li>
+                      <li class="list-item">Vistaprint</li>
+                      <li class="list-item">Amazon</li>
+                      <li class="list-item">Tesco</li>
+                      <li class="list-item">Neiman Marcus</li>
+                      <li class="list-item">Walmart</li>
+                      <li class="list-item">Cabela&#x27;s</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -138,18 +221,29 @@
               <div class="col-10">
                 <h3 class="h6"><strong>Brander, Team COBRA</strong></h3>
                 <p class="lead">Branding Brand</p>
-                <p>Work with critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">American Eagle</li>
-                        <li class="list-item">Hot Topic</li>
-                        <li class="list-item">Speedo</li>
-                        <li class="list-item">Timberland</li>
-                        <li class="list-item">Tumi Japan</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                <p>Work closely with clients on critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">PHP</li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">JQuery</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">CSS3</li>
+                      <li class="list-item">Photoshop</li>
+                      <li class="list-item">Node</li>
+                      <li class="list-item">SVN</li>
+                      <li class="list-item">GIT</li>
+                      <li class="list-item">Ubuntu/Linux</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">American Eagle</li>
+                      <li class="list-item">Hot Topic</li>
+                      <li class="list-item">Speedo</li>
+                      <li class="list-item">Timberland</li>
+                      <li class="list-item">Tumi Japan</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -160,6 +254,21 @@
                 <h3 class="h6"><strong>Web Developer</strong></h3>
                 <p class="lead">Skyword</p>
                 <p>Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">JQuery</li>
+                      <li class="list-item">Java</li>
+                      <li class="list-item">JSP</li>
+                      <li class="list-item">Struts2</li>
+                      <li class="list-item">Hibernate</li>
+                      <li class="list-item">Wiki</li>
+                      <li class="list-item">HTML5</li>
+                      <li class="list-item">CSS3</li>
+                      <li class="list-item">SQL</li>
+                      <li class="list-item">BASH</li>
+                      <li class="list-item">SVN</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -167,23 +276,42 @@
                 2011
               </time>
               <div class="col-10">
-                <h3 class="h6"><strong>Full Stack Web Developer</strong></h3>
+                <h3 class="h6"><strong>Full-Stack Web Developer</strong></h3>
                 <p class="lead">Contractor at Songwhale</p>
                 <p>Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects. Mentor Junior Developers.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">BAMP</li>
-                        <li class="list-item">UPMC</li>
-                        <li class="list-item">DOTS</li>
-                        <li class="list-item">CalU</li>
-                        <li class="list-item">Clique Vodka</li>
-                        <li class="list-item">Dibella&#x27;s Old Fashioned Submarines</li>
-                        <li class="list-item">Pittsburgh Penguins</li>
-                        <li class="list-item">Pittsburgh Pirates</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">JQuery</li>
+                      <li class="list-item">Python</li>
+                      <li class="list-item">PHP</li>
+                      <li class="list-item">Photoshop</li>
+                      <li class="list-item">HTML</li>
+                      <li class="list-item">CSS</li>
+                      <li class="list-item">SQL</li>
+                      <li class="list-item">MySQL</li>
+                      <li class="list-item">Postgres</li>
+                      <li class="list-item">Django</li>
+                      <li class="list-item">Nginx</li>
+                      <li class="list-item">WordPress</li>
+                      <li class="list-item">Sorenson Squeeze</li>
+                      <li class="list-item">FFmpeg</li>
+                      <li class="list-item">Bazaar</li>
+                      <li class="list-item">BASH</li>
+                      <li class="list-item">CentOS/Fedora/Linux</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">BAMP</li>
+                      <li class="list-item">UPMC</li>
+                      <li class="list-item">DOTS</li>
+                      <li class="list-item">CalU</li>
+                      <li class="list-item">Clique Vodka</li>
+                      <li class="list-item">Dibella&#x27;s Old Fashioned Submarines</li>
+                      <li class="list-item">Pittsburgh Penguins</li>
+                      <li class="list-item">Pittsburgh Pirates</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -193,17 +321,27 @@
               <div class="col-10">
                 <h3 class="h6"><strong>Web Developer</strong></h3>
                 <p class="lead">WorldDealer</p>
-                <p>Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies. Develop an API to drill down into automotive inventory information.</p>
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                        <li class="list-item">Day Automotive</li>
-                        <li class="list-item">Baierl Automotive</li>
-                        <li class="list-item">Findlay Auto Group</li>
-                        <li class="list-item">Kelly Auto Group</li>
-                        <li class="list-item">and more</li>
-                    </ul>
-                  </p>
+                <p>Meet with stakeholders to develop and maintain e-commerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies. Develop an API to drill down into automotive inventory information.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">JQuery</li>
+                      <li class="list-item">ColdFusion</li>
+                      <li class="list-item">Flash/ActionScript 2 &amp; 3</li>
+                      <li class="list-item">Photoshop</li>
+                      <li class="list-item">(x)HTML</li>
+                      <li class="list-item">CSS</li>
+                      <li class="list-item">msSQL</li>
+                      <li class="list-item">Windows XP</li>
+                  </ul>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                      <li class="list-item">Day Automotive</li>
+                      <li class="list-item">Baierl Automotive</li>
+                      <li class="list-item">Findlay Auto Group</li>
+                      <li class="list-item">Kelly Auto Group</li>
+                      <li class="list-item">and more</li>
+                  </ul>
               </div>
             </article>
             <article class="row">
@@ -214,12 +352,33 @@
                 <h3 class="h6"><strong>Multimedia Designer</strong></h3>
                 <p class="lead">MedRespond</p>
                 <p>Film, edit, compose, render, optimize, and transcribe thousands of videos for use in an online patient education system. Design and Animate Marketing materials for print and web. Develop best-practices for compression, storage and playback of all digital media.</p>
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                      <li class="list-item">Flash/ActionScript 2</li>
+                      <li class="list-item">JavaScript</li>
+                      <li class="list-item">After Effects</li>
+                      <li class="list-item">Premiere Pro</li>
+                      <li class="list-item">Photoshop</li>
+                      <li class="list-item">Sorenson Squeeze</li>
+                      <li class="list-item">RAID/NAS</li>
+                      <li class="list-item">Windows XP</li>
+                  </ul>
+              </div>
+            </article>
+            <article class="row">
+              <time class="h6 col-2">
+                2006-present
+              </time>
+              <div class="col-10">
+                <h3 class="h6"><strong>Freelance</strong></h3>
+                <p class="lead"></p>
+                <p>Perform required technical tasks for a variety of clients including Mad Dog Gym, Counterculture Tattoo, The Luma Institute, AllCelebTalk LLC, and more.</p>
               </div>
             </article>
         </section>
         <section class="Awards">
             <header class="row">
-              <h2 class="h4 offset-2 col"><i class="fa fa-star"></i> <strong>Awards</strong></h2>
+              <h2 class="h4 offset-2 col"><i class="fas fa-star"></i> <strong>Awards</strong></h2>
             </header>
             <article class="row">
               <time class="h6 col-2">
@@ -234,7 +393,7 @@
         </section>
         <section class="Education">
             <header class="row">
-              <h2 class="h4 offset-2 col"><i class="fa fa-graduation-cap"></i> <strong>Education</strong></h2>
+              <h2 class="h4 offset-2 col"><i class="fas fa-graduation-cap"></i> <strong>Education</strong></h2>
             </header>
             <article class="row">
               <time class="h6 col-2">
@@ -261,11 +420,11 @@
       <aside class="col-12 col-lg-4">
         <h4>Contact</h4>
         <p>
-          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fa fa-envelope-o"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
-          <a href="tel:4122593675"><i class="fa fa-phone"></i> 412.259.DORK</a><br>
-          <a href="http://jkirchartz.com"><i class="fa fa-globe"></i> jkirchartz.com</a><br>
-          <a href="https://github.com/jkirchartz"><i class="fa fa-github"></i> github.com/jkirchartz</a><br>
-          <a href="https://linkedin.com/in/jkirchartz"><i class="fa fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
+          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fas fa-envelope-o"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
+          <a href="tel:4122593675"><i class="fas fa-phone"></i> 412.259.DORK</a><br>
+          <a href="http://jkirchartz.com"><i class="fas fa-globe"></i> jkirchartz.com</a><br>
+          <a href="https://github.com/jkirchartz"><i class="fas fa-github"></i> github.com/jkirchartz</a><br>
+          <a href="https://linkedin.com/in/jkirchartz"><i class="fas fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
         </p>
         <h4>About</h4>
         <p>

@@ -11,7 +11,10 @@ strong {
 }
 
 ul {
+  font-size: 0.9rem;
+  display: inline;
   list-style: none;
+  margin-bottom: 0.5em;
   -webkit-padding-start: 0;
 }
 
@@ -60,7 +63,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.fa,
+.fas,
 h2,
 h3,
 h4,
@@ -69,16 +72,21 @@ h6 {
   color: $blue;
 }
 
-main .fa {
+
+main .fas {
   margin-right: 1em;
   margin-left: -1.1em;
 
-  &-graduation-cap {
+  &.fa-graduation-cap {
     margin-left: -1.25em;
+  }
+
+  &.fa-keyboard,
+  &.fa-user-tie {
+    margin: 0.5em;
   }
 }
 
-ul,
 li {
   display: inline;
 
@@ -156,7 +164,7 @@ a {
     max-width: 33.333333%;
   }
 
-  .fa {
+  .fas {
     margin-right: .25rem;
   }
 

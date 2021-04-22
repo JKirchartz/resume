@@ -36,23 +36,19 @@
         ["Github", 7],
         ["Commandline", 7],
         ["Webpack", 3],
-        ["Gulp/Grunt", 6]
+        ["Gulp/Grunt", 6],
+        ["VS Code", 7]
       ],
       "Databases": {
         ["MongoDB", 7],
         ["Postgres", 5],
         ["MySQL/MariaDB", 6]
       ],
-      "Techniques": {
-        ["Web Scraping", 10],
-        ["AJAX", 9],
-        ["Digital Ads", 6],
-        ["Email Marketing", 5]
-      ],
       "Programming": [
         ["Javascript/Node", 9],
         ["PHP", 9],
-        ["Python", 8],
+        ["Python", 6],
+        ["Typescript", 7],
         ["HTML5", 10],
         ["CSS3", 8],
         ["SVG", 7],
@@ -67,6 +63,7 @@
         ["Semantic UI", 5],
         ["Roots.io (Trellis, Sage, Bedrock)", 7],
         ["JQuery", 9],
+        ["React", 6],
         ["EmberJS", 5],
         ["ExpressJS", 7],
         ["MeteorJS", 6],
@@ -84,6 +81,10 @@
       ["Windows (7,8,10)", 5 ]
     ],
     "Other Skills": [
+        ["Web Scraping", 10],
+        ["AJAX", 9],
+        ["Digital Ads", 6],
+        ["Email Marketing", 5]
       ["A/B Testing", 6],
       ["Rapid Prototyping", 9],
       ["Typing (70 WPM)", 8],

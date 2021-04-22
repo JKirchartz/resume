@@ -2,193 +2,337 @@
   "sections": [
     {
       "header": {
-        "icon": "briefcase",
-        "text": "Experience"
+	"icon": "briefcase",
+	"text": "Experience"
       },
       "items": [
-        {
-          "time":"2019-2021",
-          "contract": false,
-          "heading": "Software Engineer",
-          "subheading": "Bentley Systems",
-          "description": "Iteratively build new functionality in a 3d Digital Twin web app, deploy sites to production, mentor Interns.",
-          "technologies": [
-              "react",
-              "typescript",
-              "learna",
-              "itwinjs"
-          ],
-          "dates": {
-             "start": "9/2019",
-             "end": "4/2021"
-          }
-        },
-        {
-          "time": "2018-2019",
-          "contract": true,
-          "heading": "UI Engineer - Analytics and Web Optimization",
-          "subheading": "Contractor at American Eagle Outfitters",
-          "description": "Create temporary experiences and A/B tests through Adobe Target. Implement the Notify Me out-of-stock notification system, which generated over 1000 hits on its first day. Make other solutions permanent in the Ember portion of the UI.",
-          "technologies": [
-            "Adobe Target",
-            "Ember"
-          ],
-          "dates" : {
-            "start": "10/2018",
-            "end": "7/2019"
-          }
-        },
-        {
-          "time": "2018",
-          "contract": false,
-          "heading": "Senior Interactive Developer",
-          "subheading": "Garrison Hughes",
-          "description": "Create animated CSS3/HTML5 ads, build and send email campaigns, manage digital videos, and maintain existing responsive WordPress sites.",
-          "clients": [
-            "UPMC",
-            "Pittsburgh Post-Gazette",
-            "First National Bank",
-            "and more"
-          ],
-          "dates" : {
-            "start": "10/2018",
-            "end": "7/2019"
-          }
-        },
-        {
-          "time": "2017",
-          "contract": true,
-          "heading": "Front-End Developer",
-          "subheading": "Contractor at Barkley REI",
-          "description": "Create a responsive static frontend, and a complete responsive WordPress site, for 2 different clients in the education sector"
-        },
-        {
-          "time": "2016-2017",
-          "contract": false,
-          "heading": "Senior Developer",
-          "subheading": "Fireman Creative",
-          "description": "Create custom responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implement systems, organize projects, and work closely with clients to fulfill their vision. Document processes and produce tutorials for Clients. Mentor junior developers and design team on development processes.",
-          "clients": [
-            "UPMC (Curavi)",
-            "JCC Pittsburgh",
-            "ISAC Pittsburgh",
-            "Out & Equal",
-            "Honey Farms Construction LLC",
-            "and more"
-          ]
-        },
-        {
-          "time": "2014-2015",
-          "contract": true,
-          "heading": "Technical Specialist III",
-          "subheading": "Contractor at Google",
-          "description": "Develop and maintain customizable functions to validate, clean, and optimize product data feeds across various shopping engines for a variety of clients and migrate VBScript to JavaScript.",
-          "clients": [
-            "Jet.com",
-            "Vistaprint",
-            "Amazon",
-            "Tesco",
-            "Neiman Marcus",
-            "Walmart",
-            "Cabela's",
-            "and more"
-          ]
-        },
-        {
-          "time": "2013-2014",
-          "contract": false,
-          "heading": "Brander, Team COBRA",
-          "subheading": "Branding Brand",
-          "description": "Work with critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.",
-          "clients": [
-            "American Eagle",
-            "Hot Topic",
-            "Speedo",
-            "Timberland",
-            "Tumi Japan",
-            "and more"
-          ]
-        },
-        {
-          "time": "2012-2013",
-          "contract": false,
-          "heading": "Web Developer",
-          "subheading": "Skyword",
-          "description": "Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices."
-        },
-        {
-          "time": "2011",
-          "contract": true,
-          "heading": "Full Stack Web Developer",
-          "subheading": "Contractor at Songwhale",
-          "description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects. Mentor Junior Developers.",
-          "clients": [
-            "BAMP",
-            "UPMC",
-            "DOTS",
-            "CalU",
-            "Clique Vodka",
-            "Dibella's Old Fashioned Submarines",
-            "Pittsburgh Penguins",
-            "Pittsburgh Pirates",
-            "and more"
-          ]
-        },
-        {
-          "time": "2008-2010",
-          "contract": false,
-          "heading": "Web Developer",
-          "subheading": "WorldDealer",
-          "description": "Maintain and develop eCommerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies. Develop an API to drill down into automotive inventory information.",
-          "clients": [
-            "Day Automotive",
-            "Baierl Automotive",
-            "Findlay Auto Group",
-            "Kelly Auto Group",
-            "and more"
-          ]
-        },
-        {
-          "time": "2006-2007",
-          "contract": false,
-          "heading": "Multimedia Designer",
-          "subheading": "MedRespond",
-          "description": "Film, edit, compose, render, optimize, and transcribe thousands of videos for use in an online patient education system. Design and Animate Marketing materials for print and web. Develop best-practices for compression, storage and playback of all digital media."
-        }
+	{
+	  "time":"2019-2021",
+	  "contract": false,
+	  "heading": "Software Engineer",
+	  "subheading": "Bentley Systems",
+	  "description": "Iteratively build new functionality in a 3d Digital Twin SPA web-app, deploy sites to production, mentor Interns.",
+	  "technologies": [
+	    "React",
+	    "Typescript",
+	    "HTML5",
+	    "SASS",
+	    "VS Code",
+	    "Git",
+	    "itwinjs",
+	    "Learna",
+	    "Bash",
+	    "OSX",
+	    "Windows",
+	    "WSL"
+	  ],
+	  "dates": {
+	    "start": "9/2019",
+	    "end": "4/2021"
+	  }
+	},
+	{
+	  "time": "2018-2019",
+	  "contract": true,
+	  "heading": "UI Engineer - Analytics and Web Optimization",
+	  "subheading": "Contractor at American Eagle Outfitters",
+	  "description": "Create temporary experiences and A/B tests through Adobe Target. Implement the Notify Me out-of-stock notification system, which generated over 1000 hits on its first day. Make other solutions permanent in the Ember portion of the UI.",
+	  "technologies": [
+	    "Adobe Target",
+	    "Javascript",
+	    "HTML5",
+	    "CSS3",
+	    "Ember",
+	    "GIT",
+	    "OSX"
+	  ],
+	  "dates" : {
+	    "start": "10/2018",
+	    "end": "7/2019"
+	  }
+	},
+	{
+	  "time": "2018",
+	  "contract": false,
+	  "heading": "Senior Interactive Developer",
+	  "subheading": "Garrison Hughes",
+	  "description": "Create animated CSS3/HTML5 ads, build and send email campaigns, manage digital videos, and maintain existing responsive WordPress sites.",
+	  "technologies": [
+	    "WordPress",
+	    "HTML5",
+	    "CSS3",
+	    "Animation",
+	    "Grunt",
+	    "Bash",
+	    "Git",
+	    "OSX"
+	  ],
+	  "clients": [
+	    "UPMC",
+	    "Pittsburgh Post-Gazette",
+	    "First National Bank",
+	    "and more"
+	  ],
+	  "dates" : {
+	    "start": "10/2018",
+	    "end": "7/2019"
+	  }
+	},
+	{
+	  "time": "2017",
+	  "contract": true,
+	  "heading": "Front-End Developer",
+	  "subheading": "Contractor at Barkley REI",
+	  "description": "Create a responsive static frontend, and a complete responsive WordPress site, for 2 different clients in the education sector",
+	  "technologies": [
+	    "WordPress",
+	    "Assemble.io",
+	    "Handlebars",
+	    "Grunt",
+	    "Bower",
+	    "yeoman",
+	    "BASH",
+	    "GIT",
+	    "OSX"
+	  ],
+	  "dates": {
+	    "start": "8/2017",
+	    "end": "12/2017"
+	  }
+	},
+	{
+	  "time": "2016-2017",
+	  "contract": false,
+	  "heading": "Senior Full-Stack Developer",
+	  "subheading": "Fireman Creative",
+	  "description": "Work closely with designers and stakeholders to create fully customized responsive WordPress sites mostly in the medical, non-profit, and real estate sectors. Implement systems, organize projects, and work closely with clients to fulfill their vision. Document processes and produce tutorials for Clients. Mentor junior developers and design team.",
+	  "technologies": [
+	    "WordPress",
+	    "PHP",
+	    "HTML5",
+	    "CSS3",
+	    "JavaScript",
+	    "Bootstrap",
+	    "Ansible",
+	    "Roots.io",
+	    "Laravel",
+	    "Composer",
+	    "Grunt",
+	    "Bower",
+	    "Vagrant",
+	    "BASH",
+	    "GIT",
+	    "OSX"
+	  ],
+	  "clients": [
+	    "UPMC (Curavi)",
+	    "JCC Pittsburgh",
+	    "ISAC Pittsburgh",
+	    "Out & Equal",
+	    "Honey Farms Construction LLC",
+	    "and more"
+	  ],
+	  "dates": {
+	    "start": "8/2018",
+	    "end": "8/2017"
+	  }
+	},
+	{
+	  "time": "2014-2015",
+	  "contract": true,
+	  "heading": "Technical Specialist III",
+	  "subheading": "Contractor at Google",
+	  "description": "Develop and maintain customizable functions to validate, clean, and optimize product data feeds across various shopping engines for a variety of clients and migrate VBScript to JavaScript.",
+	  "clients": [
+	    "Jet.com",
+	    "Vistaprint",
+	    "Amazon",
+	    "Tesco",
+	    "Neiman Marcus",
+	    "Walmart",
+	    "Cabela's",
+	    "and more"
+	  ],
+	  "technologies": [
+	    "JavaScript",
+	    "VBScript",
+	    "BASH",
+	    "Perforce",
+	    "Goobuntu/Linux"
+	  ],
+	  "dates": {
+	    "start": "8/2018",
+	    "end": "12/2018"
+	  }
+	},
+	{
+	  "time": "2013-2014",
+	  "contract": false,
+	  "heading": "Brander, Team COBRA",
+	  "subheading": "Branding Brand",
+	  "description": "Work closely with clients on critical, major, and minor issues and updates on existing user-friendly cross platform mobile websites and apps for major retailers across the globe.",
+	  "clients": [
+	    "American Eagle",
+	    "Hot Topic",
+	    "Speedo",
+	    "Timberland",
+	    "Tumi Japan",
+	    "and more"
+	  ],
+	  "technologies": [
+	    "PHP",
+	    "JavaScript",
+	    "JQuery",
+	    "HTML5",
+	    "CSS3",
+	    "Photoshop",
+	    "Node",
+	    "SVN",
+	    "GIT",
+	    "Ubuntu/Linux"
+	  ]
+	},
+	{
+	  "time": "2012-2013",
+	  "contract": false,
+	  "heading": "Web Developer",
+	  "subheading": "Skyword",
+	  "description": "Maintain and implement new features and upgrades in existing custom content publication system, promote and improve best practices.",
+	  "technologies": [
+	    "JavaScript",
+	    "JQuery",
+	    "Java",
+	    "JSP",
+	    "Struts2",
+	    "Hibernate",
+	    "Wiki",
+	    "HTML5",
+	    "CSS3",
+	    "SQL",
+	    "BASH",
+	    "SVN"
+	  ]
+	},
+	{
+	  "time": "2011",
+	  "contract": true,
+	  "heading": "Full-Stack Web Developer",
+	  "subheading": "Contractor at Songwhale",
+	  "description": "Implement cross-platform mobile websites and multimedia, redesign and modify multiple WordPress sites, templates, and plugins, and modify existing projects. Update and optimize a python game and make it cross-platform compatible. Setup and administer virtual hosting for projects. Mentor Junior Developers.",
+	  "clients": [
+	    "BAMP",
+	    "UPMC",
+	    "DOTS",
+	    "CalU",
+	    "Clique Vodka",
+	    "Dibella's Old Fashioned Submarines",
+	    "Pittsburgh Penguins",
+	    "Pittsburgh Pirates",
+	    "and more"
+	  ],
+	  "technologies": [
+	    "JavaScript",
+	    "JQuery",
+	    "Python",
+	    "PHP",
+	    "Photoshop",
+	    "HTML",
+	    "CSS",
+	    "SQL",
+	    "MySQL",
+	    "Postgres",
+	    "Django",
+	    "Nginx",
+	    "WordPress",
+	    "Sorenson Squeeze",
+	    "FFmpeg",
+	    "Bazaar",
+	    "BASH",
+	    "CentOS/Fedora/Linux"
+	  ]
+	},
+	{
+	  "time": "2008-2010",
+	  "contract": false,
+	  "heading": "Web Developer",
+	  "subheading": "WorldDealer",
+	  "description": "Meet with stakeholders to develop and maintain e-commerce websites for over 200 automotive dealerships nationwide, including marketing and mobile sites, custom CMS modules, SEO Optimization, and 3rd party technologies. Develop an API to drill down into automotive inventory information.",
+	  "clients": [
+	    "Day Automotive",
+	    "Baierl Automotive",
+	    "Findlay Auto Group",
+	    "Kelly Auto Group",
+	    "and more"
+	  ],
+	  "technologies": [
+	    "JavaScript",
+	    "JQuery",
+	    "ColdFusion",
+	    "Flash/ActionScript 2 & 3",
+	    "Photoshop",
+	    "(x)HTML",
+	    "CSS",
+	    "msSQL",
+	    "Windows XP"
+	  ]
+	},
+	{
+	  "time": "2006-2007",
+	  "contract": false,
+	  "heading": "Multimedia Designer",
+	  "subheading": "MedRespond",
+	  "description": "Film, edit, compose, render, optimize, and transcribe thousands of videos for use in an online patient education system. Design and Animate Marketing materials for print and web. Develop best-practices for compression, storage and playback of all digital media.",
+	  "technologies": [
+	    "Flash/ActionScript 2",
+	    "JavaScript",
+	    "After Effects",
+	    "Premiere Pro",
+	    "Photoshop",
+	    "Sorenson Squeeze",
+	    "RAID/NAS",
+	    "Windows XP"
+	  ]
+	},
+	{
+	  "time": "2006-present",
+	  "contract": false,
+	  "heading": "Freelance",
+	  "description": "Perform required technical tasks for a variety of clients including Mad Dog Gym, Counterculture Tattoo, The Luma Institute, AllCelebTalk LLC, and more."
+	}
       ]
     },
     {
       "header": {
-        "icon": "star",
-        "text": "Awards"
+	"icon": "star",
+	"text": "Awards"
       },
       "items" : [
-        {
-          "time": "2016",
-          "heading": "Steel City Codefest",
-          "subheading": "Winner: Design Category",
-          "description": "Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help organize the effort to keep Pittsburgh’s streets clean."
-        }
+	{
+	  "time": "2016",
+	  "heading": "Steel City Codefest",
+	  "subheading": "Winner: Design Category",
+	  "description": "Team Hyperham worked with The Pittsburgh Downtown Partnership (PDP) & City of Pittsburgh Department of Public Works (DPW) to create the SmarTrash website and 2 apps to assist in communications between the PDP & DPW to help organize the effort to keep Pittsburgh’s streets clean."
+	}
       ]
     },
 
     {
       "header": {
-        "icon": "graduation-cap",
-        "text": "Education"
+	"icon": "graduation-cap",
+	"text": "Education"
       },
       "items" : [
-        {
-          "time": "2011 and Ongoing",
-          "heading": "CodeSchool, Codecademy, FreeCodeCamp, SoloLearn",
-          "description": "Studied AngularJS, Ember, C#, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more."
-        },
-        {
-          "time": "2006",
-          "heading": "B.S. Interactive Multimedia Design",
-          "subheading": "Art Institute of Pittsburgh",
-          "description": "Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers."
-        }
+	{
+	  "time": "2011 and Ongoing",
+	  "heading": "CodeSchool, Codecademy, FreeCodeCamp, SoloLearn",
+	  "description": "Studied AngularJS, Ember, C#, JavaScript, Ruby/Rails, Python, GIT, Mongo DB, Bootstrap, and more."
+	},
+	{
+	  "time": "2006",
+	  "heading": "B.S. Interactive Multimedia Design",
+	  "subheading": "Art Institute of Pittsburgh",
+	  "description": "Studied Design, Videography, Photography, Philosophy, Psychology, and more. Tutored peers."
+	}
       ]
     }
   ]

@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>JKirchartz Resume</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9b28502349.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
+      document.getElementsByTagName('title')[0].innerHTML += new Date().getFullYear();
       window.addEventListener('load', function(){
+        var vars = {
+            length: 100,
+            tech: true,
+            clients: true
+        };
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {vars[key] = value;});
+        console.log("url params:", parts, vars);
         var items = document.querySelectorAll('.Experience article.row');
-        var showItems = parseInt((window.location.hash).slice(1), 10);
+        var showItems = parseInt(vars["length"], 10);
         for (var i = 0; i < items.length; i++) {
+          if (!vars["tech"]) {
+             items[i].querySelector('.tech').style.display = "none";
+          }
+          if (!vars["clients"]) {
+             items[i].querySelector('.clients').style.display = "none";
+          }
           if ((i + 1) > showItems) {
             items[i].style.display = "none";
           }
@@ -38,7 +52,7 @@
         <section class="{{header.text}}">
           {{#with header}}
             <header class="row">
-              <h2 class="h4 offset-2 col"><i class="fa fa-{{ icon }}"></i> <strong>{{ text }}</strong></h2>
+              <h2 class="h4 offset-2 col"><i class="fas fa-{{ icon }}"></i> <strong>{{ text }}</strong></h2>
             </header>
           {{/with}}
           {{#each items}}
@@ -50,15 +64,21 @@
                 <h3 class="h6"><strong>{{ heading }}</strong></h3>
                 <p class="lead">{{ subheading }}</p>
                 <p>{{ description }}</p>
+                {{#if technologies}}
+                  <ul class="tech">
+                    <li><i title="Technologies" class="fas fa-keyboard"></i><strong>Stack:</strong></li>
+                    {{#each technologies}}
+                      <li class="list-item">{{this}}</li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
                 {{#if clients}}
-                  <p>
-                    <ul>
-                      <li><strong>Clients:</strong></li>
-                      {{#each clients}}
-                        <li class="list-item">{{this}}</li>
-                      {{/each}}
-                    </ul>
-                  </p>
+                  <ul class="clients">
+                    <li><i title="Clients" class="fas fa-user-tie"></i><strong>Clients:</strong></li>
+                    {{#each clients}}
+                      <li class="list-item">{{this}}</li>
+                    {{/each}}
+                  </ul>
                 {{/if}}
               </div>
             </article>
@@ -69,11 +89,11 @@
       <aside class="col-12 col-lg-4">
         <h4>Contact</h4>
         <p>
-          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fa fa-envelope-o"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
-          <a href="tel:4122593675"><i class="fa fa-phone"></i> 412.259.DORK</a><br>
-          <a href="http://jkirchartz.com"><i class="fa fa-globe"></i> jkirchartz.com</a><br>
-          <a href="https://github.com/jkirchartz"><i class="fa fa-github"></i> github.com/jkirchartz</a><br>
-          <a href="https://linkedin.com/in/jkirchartz"><i class="fa fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
+          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fas fa-envelope-o"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
+          <a href="tel:4122593675"><i class="fas fa-phone"></i> 412.259.DORK</a><br>
+          <a href="http://jkirchartz.com"><i class="fas fa-globe"></i> jkirchartz.com</a><br>
+          <a href="https://github.com/jkirchartz"><i class="fas fa-github"></i> github.com/jkirchartz</a><br>
+          <a href="https://linkedin.com/in/jkirchartz"><i class="fas fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
         </p>
         <h4>About</h4>
         <p>

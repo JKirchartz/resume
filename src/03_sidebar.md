@@ -40,12 +40,6 @@ National Novel Generation Month, writing code to write a novel as opposed to wri
 
 [jkirchartz.com/NaNoGenMo][7]
 
-**The Revengerists**
-
-Podcast, Wiki, Web-based game, and more featuring characters from The Revengerist’s Omniverse
-
-[revengerists.com][8]
-
 }
 
 [1]: http://jkirchartz.com
