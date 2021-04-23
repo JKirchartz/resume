@@ -8,31 +8,6 @@
     <script src="https://kit.fontawesome.com/9b28502349.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script>
-      document.getElementsByTagName('title')[0].innerHTML += new Date().getFullYear();
-      window.addEventListener('load', function(){
-        var vars = {
-            length: 100,
-            tech: true,
-            clients: true
-        };
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {vars[key] = value;});
-        console.log("url params:", parts, vars);
-        var items = document.querySelectorAll('.Experience article.row');
-        var showItems = parseInt(vars["length"], 10);
-        for (var i = 0; i < items.length; i++) {
-          if (!vars["tech"]) {
-             items[i].querySelector('.tech').style.display = "none";
-          }
-          if (!vars["clients"]) {
-             items[i].querySelector('.clients').style.display = "none";
-          }
-          if ((i + 1) > showItems) {
-            items[i].style.display = "none";
-          }
-        }
-      });
-    </script>
   </head>
   <body class="container-fluid">
     <header class="row">
@@ -420,11 +395,11 @@
       <aside class="col-12 col-lg-4">
         <h4>Contact</h4>
         <p>
-          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fas fa-envelope-o"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
+          <a href="&#x6D;&#97;&#x69;&#x6C;&#116;&#x6F;:&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;"><i class="fas fa-envelope"></i>&#x6D;e&#64;&#x6A;&#x6B;&#105;&#x72;&#99;&#x68;&#97;r&#x74;&#122;&#x2E;&#x63;&#x6F;&#109;</a><br>
           <a href="tel:4122593675"><i class="fas fa-phone"></i> 412.259.DORK</a><br>
           <a href="http://jkirchartz.com"><i class="fas fa-globe"></i> jkirchartz.com</a><br>
-          <a href="https://github.com/jkirchartz"><i class="fas fa-github"></i> github.com/jkirchartz</a><br>
-          <a href="https://linkedin.com/in/jkirchartz"><i class="fas fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
+          <a href="https://github.com/jkirchartz"><i class="fab fa-github"></i> github.com/jkirchartz</a><br>
+          <a href="https://linkedin.com/in/jkirchartz"><i class="fab fa-linkedin"></i> linkedin.com/in/jkirchartz</a>
         </p>
         <h4>About</h4>
         <p>
@@ -480,5 +455,34 @@
         <p>National Novel Generation Month: generate 50,000 word novels programatically using AI and ML techniques.<br><a href="http://jkirchartz.com/NaNoGenMo">jkirchartz.com/NaNoGenMo</a></p>
       </aside>
     </div>
+    <script>
+      document.getElementsByTagName('title')[0].innerHTML += " - " + new Date().getFullYear();
+      window.addEventListener('load', function(){
+        var vars = {
+            length: 6,
+            tech: true,
+            clients: true,
+            title: ""
+        };
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {vars[key] = value;});
+        console.log("url params:", parts, vars);
+        var items = document.querySelectorAll('.Experience article.row');
+        var showItems = parseInt(vars["length"], 10);
+        if (vars["title"].length) {
+          document.querySelectorAll("header .lead").innerHTML = vars["title"];
+        }
+        for (var i = 0; i < items.length; i++) {
+          if (!vars["tech"]) {
+             items[i].querySelector('.tech').style.display = "none";
+          }
+          if (!vars["clients"]) {
+             items[i].querySelector('.clients').style.display = "none";
+          }
+          if ((i + 1) > showItems) {
+            items[i].style.display = "none";
+          }
+        }
+      });
+    </script>
   </body>
 </html>
