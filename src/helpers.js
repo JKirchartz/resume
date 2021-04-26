@@ -28,3 +28,15 @@ Handlebars.registerHelper("skills", function(skills) {
     return skills[skill];
   });
 });
+
+
+Array.prototype.byCount= function(){     var itm, a= [], L= this.length, o= {};     for(var i= 0; i<L; i++){         itm= this[i];         if(!itm) continue;         if(o[itm]== undefined) o[itm]= 1;         else ++o[itm];     }     for(var p in o) a[a.length]= p;     return a.sort(function(a, b){         return o[b]-o[a];     }); }
+
+Handlebars.registerHelper("technologies", function(roles) {
+  var tech = [];
+  roles.forEach(function (item) {
+    if ( item.technologies ) {
+      tech.concat(item.technologies);
+    }});
+  return tech.byCount();
+});
