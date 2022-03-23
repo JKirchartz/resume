@@ -2,8 +2,20 @@
 
 After a recent redesign of my own resume proved difficult to maintain (using InDesign.)
 I decided to Generate a PDF resume from markdown with pandoc, after stumbling upon [Ixxie's CV][1].
+However, this did not align with my idealized design so instead I've overcomplicated everything in new and interesting ways.
 
-To build the resume run `make` and a new PDF will be generated in the current folder.
+## Usage
+
+edit `src/resume.json` with your career history
+
+ensure `src/index.hbs` and `src/plain.hbs` contain the relevant personal information
+
+ensure `node` is installed with `npm` version `5.2.0` or better
+
+run `npx grunt` to build the resume and make it ready to publish on [github-pages](https://pages.github.com/) or wherever you'd like.
+
+The site's source code should be in the `docs/` directory.
+
 
 ## Colophon
 
@@ -14,8 +26,6 @@ To build the resume run `make` and a new PDF will be generated in the current fo
 ## Special Thanks
 
 [Ixxie][2] for the [inspiration][1], [Sway][3] for the original [Latex/FontAwesome code][4]
-
-
 
 [1]: https://github.com/ixxie/cv
 [2]: https://github.com/ixxie/
