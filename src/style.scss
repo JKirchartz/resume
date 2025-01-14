@@ -20,6 +20,8 @@ $black: var(--black); // #000000;
 
 html, body {
   font-family: Montserrat, sans-serif;
+  background: var(--light);
+  color: var(--dark);
 }
 
 strong {
