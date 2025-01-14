@@ -1,3 +1,18 @@
+:root {
+  --blue: #309090;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #309090;
+    --white: #000000;
+    --black: #FFFFFF;
+    --light: #343a40;
+    --dark: #f8f9fa;
+  }
+}
 html, body {
   font-family: Montserrat, sans-serif;
 }
@@ -39,11 +54,11 @@ time::before {
   bottom: -.25rem;
   right: 0;
   content: '';
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--gray);
 }
 time::after {
   position: absolute;
-  text-shadow: 0 3px 0 #FFFFFF, 0 -3px #FFFFFF;
+  text-shadow: 0 3px 0 var(--white), 0 -3px var(--white);
   top: 2%;
   right: -.33em;
   font: normal normal normal .5rem/1 FontAwesome;
@@ -71,7 +86,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #309090;
+  color: var(--blue);
 }
 
 main .fas {
@@ -97,7 +112,7 @@ li.list-item:not(:last-of-type)::after {
 }
 
 a {
-  color: #000000;
+  color: var(--black);
 }
 
 aside {

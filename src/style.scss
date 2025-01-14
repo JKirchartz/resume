@@ -1,6 +1,22 @@
-$blue: #309090;
-$white: #FFFFFF;
-$black: #000000;
+$blue: var(--blue); // #309090;
+$white: var(--white); // #FFFFFF;
+$black: var(--black); // #000000;
+
+:root {
+  --blue: #309090;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #309090;
+    --white: #000000;
+    --black: #FFFFFF;
+    --light: #343a40;
+    --dark: #f8f9fa;
+  }
+}
 
 html, body {
   font-family: Montserrat, sans-serif;
@@ -47,7 +63,7 @@ time {
     bottom: -.25rem;
     right: 0;
     content: '';
-    border-right: 1px solid lighten($black, 50%);
+    border-right: 1px solid var(--gray);
   }
 
   &::after {
