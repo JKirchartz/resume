@@ -1,19 +1,16 @@
 $blue: var(--blue); // #309090;
 $white: var(--white); // #FFFFFF;
-$black: var(--black); // #000000;
 
 :root {
-  --blue: #309090;
+  --blue: #206060;
   --white: #FFFFFF;
-  --black: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --blue: #309090;
+    --blue: #3BB0B0;
     --white: #000000;
-    --black: #FFFFFF;
-    --light: #343a40;
+    --light: #121212;
     --dark: #f8f9fa;
   }
 }
@@ -55,7 +52,7 @@ time {
     color: transparent;
 
     &::after {
-      color: black!important;
+      color: var(--dark)!important;
     }
   }
 
@@ -131,7 +128,14 @@ li {
 }
 
 a {
-  color: $black;
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--blue);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid;
 }
 
 aside {
