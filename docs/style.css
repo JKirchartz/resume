@@ -60,7 +60,7 @@ time::before {
 }
 time::after {
   position: absolute;
-  text-shadow: 0 3px 0 var(--white), 0 -3px var(--white);
+  text-shadow: 0 3px 0 var(--light), var(--light);
   top: 2%;
   right: -.33em;
   font: normal normal normal .5rem/1 FontAwesome;
