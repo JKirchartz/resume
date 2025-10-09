@@ -1,15 +1,13 @@
 :root {
-  --blue: #309090;
+  --blue: #206060;
   --white: #FFFFFF;
-  --black: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --blue: #309090;
+    --blue: #3BB0B0;
     --white: #000000;
-    --black: #FFFFFF;
-    --light: #343a40;
+    --light: #121212;
     --dark: #f8f9fa;
   }
 }
@@ -48,23 +46,23 @@ time {
   color: transparent;
 }
 .Education time::after {
-  color: black !important;
+  color: var(--dark) !important;
 }
 time::before {
   position: absolute;
   top: -1.5rem;
-  bottom: -.25rem;
+  bottom: -0.25rem;
   right: 0;
-  content: '';
+  content: "";
   border-right: 1px solid var(--gray);
 }
 time::after {
   position: absolute;
   text-shadow: 0 3px 0 var(--light), var(--light);
   top: 2%;
-  right: -.33em;
-  font: normal normal normal .5rem/1 FontAwesome;
-  content: '\f111';
+  right: -0.33em;
+  font: normal normal normal 0.5rem/1 FontAwesome;
+  content: "\f111";
   display: block;
 }
 
@@ -109,12 +107,19 @@ li {
   display: inline;
 }
 li.list-item:not(:last-of-type)::after {
-  content: ', ';
+  content: ", ";
   display: inline;
 }
 
 a {
-  color: var(--black);
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--blue);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid;
 }
 
 aside {
@@ -140,7 +145,6 @@ aside .fab {
   .container-fluid {
     max-width: 720px;
   }
-
   aside {
     text-align: left;
     margin-top: 1rem;
@@ -160,11 +164,9 @@ aside .fab {
   body {
     -webkit-print-color-adjust: exact;
   }
-
   .container-fluid {
     max-width: 100%;
   }
-
   header {
     margin-top: 0;
   }
@@ -175,37 +177,28 @@ aside .fab {
     flex: 0 0 20%;
     max-width: 20%;
   }
-
   main,
   aside {
     padding-left: 0 !important;
   }
-
   main.col-lg-8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
-
   aside.col-lg-4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-
   .fas {
-    margin-right: .25rem;
+    margin-right: 0.25rem;
   }
-
   .offset {
     margin-left: 11%;
   }
-
   time::after {
-    right: -.45em;
+    right: -0.45em;
   }
-
   a {
     text-decoration: none !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

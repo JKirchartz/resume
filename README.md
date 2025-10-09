@@ -16,6 +16,8 @@ run `npx grunt` to build the resume and make it ready to publish on [github-page
 
 The site's source code should be in the `docs/` directory.
 
+Note: The Grunt setup now uses the Dart Sass implementation (the `sass` npm package) via `grunt-sass`.
+
 
 ## Colophon
 

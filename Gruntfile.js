@@ -7,12 +7,14 @@ module.exports = function(grunt) {
     "pkg": grunt.file.readJSON("package.json"),
     // Task configuration.
     "sass": {
-      docs : {
-        options : {
-          style: "expanded"
+      docs: {
+        options: {
+          implementation: require('sass'),
+          sourceMap: true,
+          outputStyle: 'expanded'
         },
         files: {
-          "docs/style.css": "src/style.scss"
+          'docs/style.css': 'src/style.scss'
         }
       }
     },
@@ -36,25 +38,32 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: "src/**",
-      tasks: ["sass", "compile-handlebars"]
+      styles: {
+        files: ['src/**/*.scss'],
+        tasks: ['sass']
+      },
+      templates: {
+        files: ['src/**/*.hbs', 'src/**/*.json', 'src/helpers.js'],
+        tasks: ['compile-handlebars']
+      }
     },
     browserSync: {
       dev: {
         bsFiles: {
-          src : [ "src/**" ]
+          src: ['docs/**']
         },
         options: {
           watchTask: true,
           open: false,
-          server: "./docs/"                 }
+          server: './docs/'
+        }
       }
     }
 
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks("grunt-contrib-sass");
+  grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-compile-handlebars");
   grunt.loadNpmTasks("grunt-browser-sync");
