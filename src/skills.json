@@ -5,16 +5,15 @@
       ["Illustration", 5],
       ["Motion Graphics", 6],
       ["Animation", 6],
-      "Adobe Creative Suite": {
-        ["Photoshop", 8],
-        ["Premier", 8],
+      "Adobe Creative Suite": [
+        ["Photoshop", 7],
+        ["Premier", 7],
         ["After Effects", 7],
-        ["Flash", 7],
         ["Illustrator",4]
       ]
     ],
     "Technology": {
-      "DevOps": {
+      "DevOps": [
         ["Ansible", 4],
         ["Capistrano", 3],
         ["TravisCI", 2],
@@ -23,12 +22,12 @@
         ["Nginx", 6],
         ["LetsEncrypt", 5]
       ],
-      "Version Control": {
+      "Version Control": [
         ["Git", 8],
         ["SVN", 4],
         ["Mercurial", 2]
       ],
-      "Tools": {
+      "Tools": [
         ["Vim", 8],
         ["Eclipse", 6],
         ["Basecamp", 6],
@@ -39,23 +38,22 @@
         ["Gulp/Grunt", 6],
         ["VS Code", 7]
       ],
-      "Databases": {
+      "Databases": [
         ["MongoDB", 7],
         ["Postgres", 5],
         ["MySQL/MariaDB", 6]
       ],
       "Programming": [
         ["Javascript/Node", 9],
-        ["PHP", 9],
-        ["Python", 6],
+        ["PHP", 7],
+        ["Python", 4],
         ["Typescript", 7],
         ["HTML5", 10],
         ["CSS3", 8],
         ["SVG", 7],
         ["SASS / LESS / PostCSS", 8],
-        ["Java", 4],
-        ["Bash", 6],
-        ["Perl", 2]
+        ["Bash", 7],
+        ["Perl", 7]
       ],
       "Frameworks/Libraries": [
         ["Wordpress", 7],

@@ -1,6 +1,25 @@
+/* Original Colorscheme
+:root {
+  --blue: #309090;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #309090;
+    --white: #000000;
+    --black: #FFFFFF;
+    --light: #343a40;
+    --dark: #f8f9fa;
+  }
+}
+*/
 :root {
   --blue: #206060;
   --white: #FFFFFF;
+  --light: var(--white);
+  --dark: var(--blue);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -202,3 +221,4 @@ aside .fab {
     text-decoration: none !important;
   }
 }
+/*# sourceMappingURL=style.css.map */
