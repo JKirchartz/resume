@@ -20,10 +20,10 @@ $blue: var(--blue); // #309090;
 $white: var(--white); // #FFFFFF;
 
 :root {
-  --blue: #206060;
+  --blue: #309090;
   --white: #FFFFFF;
   --light: var(--white);
-  --dark: var(--blue);
+  --dark: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
